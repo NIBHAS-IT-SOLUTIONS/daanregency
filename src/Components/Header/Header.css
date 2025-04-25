@@ -1,0 +1,61 @@
+.letter-spacing {
+  letter-spacing: 3px;
+}
+
+.carousel-item {
+  transition: opacity 0.8s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.transition-navbar {
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+  .navbar-brand img {
+    width: 140px;
+  }
+
+  .transparent-navbar {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  
+  
+  .scrolled-navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-collapse {
+    
+    padding: 1rem;
+  }
+
+
+
+  /* new */
+  .transparent-navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scrolled-navbar {
+    background-color: rgba(0, 0, 0, 0.85);
+    transition: background-color 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-nav {
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+  }
+  
