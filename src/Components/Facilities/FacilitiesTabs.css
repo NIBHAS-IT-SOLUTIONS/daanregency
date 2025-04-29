@@ -1,0 +1,28 @@
+.facility-tabs .facility-tab {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    padding: 10px;
+  }
+  
+  .facility-tabs .facility-tab.active {
+    color: #fa5b0f;
+    border-bottom: 2px solid #fa5b0f;
+    opacity: 1;
+  }
+  
+  .facility-tabs .icon {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .facility-tabs .label {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .facility-img {
+    background: linear-gradient(45deg, #999, #ccc); /* Placeholder */
+  }
+  

@@ -38,7 +38,7 @@ export default function Header() {
     >
       <div className="container-fluid px-0">
 
-        <a className="navbar-brand d-flex align-items-center gap-2" href="#">
+        <a className="navbar-brand d-flex align-items-center gap-2" href="/">
           <img src={logo} alt="logo" height="80" />
           <span className="fw-bold text-light fs-5">Daan Hotels & Resorts</span>
         </a>
@@ -77,7 +77,14 @@ export default function Header() {
         {/* Collapsible Menu */}
         <div className={`collapse navbar-collapse ${showMenu ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ms-auto text-end">
-            {['Home', 'Facilities', 'About', 'Rooms', 'Gallery', 'Contact'].map((item) => (
+          <li className="nav-item d-sm-none text-center mt-3">
+              <button className="btn btn-warning btn-sm text-white w-100">Book Now</button>
+              <div className="mt-2 small text-white">
+                📞 8086094884 <br />
+                ✉️ mail.dan@gmail.com
+              </div>
+            </li>
+            {['Facilities', 'About', 'Rooms', 'Gallery', 'Contact'].map((item) => (
               <li key={item} className="nav-item mx-2">
                 <a className="nav-link text-white fw-medium" href={`/${item.toLowerCase()}`}>
                   {item}
@@ -85,13 +92,7 @@ export default function Header() {
               </li>
             ))}
 
-            <li className="nav-item d-sm-none text-center mt-3">
-              <button className="btn btn-warning btn-sm text-white w-100">Book Now</button>
-              <div className="mt-2 small text-white">
-                📞 8086094884 <br />
-                ✉️ mail.dan@gmail.com
-              </div>
-            </li>
+            
           </ul>
         </div>
       </div>

@@ -1,0 +1,49 @@
+.booking-bar {
+    background-color: #fa5b0f;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .hotel-select .dropdown-toggle {
+    background-color: #fa5b0f;
+  }
+  
+  .date-group .label {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  
+  .date-input {
+    background-color: #fa5b0f;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  .date-input::placeholder {
+    color: white;
+  }
+  
+  .check-btn {
+    background-color: #2d2d2d;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 0;
+  }
+  
+  .check-btn span {
+    line-height: 1.2;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  .check-btn .arrow {
+    color: #fa5b0f;
+    font-size: 18px;
+    margin-top: 2px;
+  }
+
+ 
+  

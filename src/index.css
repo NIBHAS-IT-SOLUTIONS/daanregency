@@ -1,5 +1,7 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+@import 'react-datepicker/dist/react-datepicker.css';
+
 .transition-navbar {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
