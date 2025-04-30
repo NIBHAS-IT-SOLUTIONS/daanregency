@@ -26,7 +26,7 @@ const HotelGrid = () => {
   return (
     <div className="container py-5">
          <h2 className='text-center display-3'>Featured Hotels</h2>
-         <br />
+         <br /><br />
       {hotels.map((hotel, idx) => (
         <div
           className="row align-items-center mb-5"
@@ -57,6 +57,7 @@ const HotelGrid = () => {
           )}
         </div>
       ))}
+       
     </div>
   );
 };

@@ -11,6 +11,27 @@
     position: relative;
    
   }
+  .banner-section {
+  
+    background: url('/public/Images/slide1.jpg') no-repeat center center;
+    background-size: cover;
+    height: 30vh;
+    position: relative;
+    color: white;
+    
+  }
+  
+  .banner-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .banner-button {
+    padding: 10px 25px;
+    font-weight: 500;
+    border-radius: 0;
+    letter-spacing: 1px;
+  }  
   @media (max-width: 575px) {
     .bookingbar {
       margin-top: -40%; 
