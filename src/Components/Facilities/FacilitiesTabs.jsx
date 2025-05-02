@@ -1,46 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './FacilitiesTabs.css';
 import { FaUtensils, FaGlassCheers, FaCar, FaSwimmer, FaSpa, FaDumbbell } from 'react-icons/fa';
 import { FaKey, FaHeadset, FaWifi } from 'react-icons/fa';
 
-const facilities = [
-  {
-    icon: <FaUtensils />,
-    title: 'Restaurant',
-    hours: '7:30 AM - 8:00 PM',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias officia...'
-  },
-  {
-    icon: <FaGlassCheers />,
-    title: 'Bar',
-    hours: '6:00 PM - 11:00 PM',
-    description: 'Enjoy world-class cocktails and drinks in our luxurious lounge.'
-  },
-  {
-    icon: <FaCar />,
-    title: 'Pick-up',
-    hours: '24/7',
-    description: 'Complimentary airport and local transport service available anytime.'
-  },
-  {
-    icon: <FaSwimmer />,
-    title: 'Swimming Pool',
-    hours: '6:00 AM - 10:00 PM',
-    description: 'Olympic-sized pool with temperature control and lounge service.'
-  },
-  {
-    icon: <FaSpa />,
-    title: 'Spa',
-    hours: '10:00 AM - 9:00 PM',
-    description: 'Relax with professional massages and wellness treatments.'
-  },
-  {
-    icon: <FaDumbbell />,
-    title: 'Gym',
-    hours: '5:00 AM - 10:00 PM',
-    description: 'Fully equipped gym with personal trainers on request.'
-  }
-];
+
 const services = [
   {
     icon: '🔑',
@@ -64,12 +27,23 @@ const services = [
   },
 ];
 
-const FacilitiesTabs = () => {
+const FacilitiesTabs = ({facilities,from}) => {
+  
+  
+  
   const [activeIndex, setActiveIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % facilities.length);
+    }, 3000); // Change tab every 4 seconds
 
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, [facilities.length]);
   return (
     <div className="container py-5">
-        <h2 className='text-center display-3'>Explore Hotels</h2>
+    {from &&
+      <h2 className='text-center display-3'> Explore Hotels </h2>
+      }
         <br /><br />
       <div className="d-flex justify-content-center flex-wrap mb-4 facility-tabs">
         {facilities.map((item, idx) => (

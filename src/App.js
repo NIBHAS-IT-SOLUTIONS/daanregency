@@ -7,6 +7,7 @@ import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
 import Gallery from './Pages/Gallery/Gallery';
+import Services from './Pages/Services/Services';
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={ <Gallery/> } />
+        <Route path="/Facilities" element={ <Services/> } />
       </Routes>
     </Router>
     </div>

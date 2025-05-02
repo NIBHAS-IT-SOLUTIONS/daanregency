@@ -1,0 +1,25 @@
+.counter-section {
+    background-color: #2e2e2e;
+  }
+  
+  .counter-box {
+    color: white;
+    padding: 20px;
+  }
+  
+  .counter-box .icon {
+    font-size: 40px;
+    color: white;
+  }
+  
+  .counter-box h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  
+  .counter-box p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  

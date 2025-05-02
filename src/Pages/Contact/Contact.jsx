@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../../Components/Header/Header'
 import './Contact.css'
 import Footer from '../../Components/Footer/Footer'
 function Contact() {
+  useEffect(() => {
+    document.title = 'Daan - Contact';
+  }, []);
   return (
     
     <div>

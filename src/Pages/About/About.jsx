@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../../Components/Header/Header'
 import './About.css'
 import aboutimage from '../../Images/slide2.jpg'
@@ -42,6 +42,11 @@ export default function About() {
         'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...',
     },
   ];
+
+
+  useEffect(() => {
+    document.title = 'Daan - About';
+  }, []);
   return (
     <div className='bg-dark'>
         <Header/>

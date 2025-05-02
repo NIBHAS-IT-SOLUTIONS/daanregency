@@ -1,0 +1,14 @@
+.card-title {
+    font-weight: bold;
+  }
+  .badge {
+    font-size: 0.8rem;
+    padding: 0.5em 0.75em;
+  }
+  .btn-warning {
+    background-color: #c49b63;
+    border: none;
+  }
+  .btn-warning:hover {
+    background-color: #b1874f;
+  }
