@@ -39,19 +39,20 @@ export default function Header() {
       <div className="container-fluid px-0">
 
         <a className="navbar-brand d-flex align-items-center gap-2" href="/">
-          <img src={logo} alt="logo" height="80" />
-          <span className="fw-bold text-light fs-5">Daan Hotels & Resorts</span>
+          <img src={logo} alt="logo" height="90" />
+          <h2 className="fw-bold text-light sm-fs-5 md-fs-1 lg-fs-1">Daan Hotels & Resorts</h2>
         </a>
 
         {/* Contact Info + CTA shown next to toggler */}
         <div className="d-flex align-items-center gap-3 ms-auto">
+        <button className="btn btn-warning btn-lg btn-block text-white d-none d-sm-inline">Book Now</button>
           <a href="tel:8086094884" className="text-white text-decoration-none small d-none d-sm-inline">
             📞 8086094884
           </a>
           <a href="mailto:mail.dan@gmail.com" className="text-white text-decoration-none small d-none d-sm-inline">
             ✉️ mail.dan@gmail.com
           </a>
-          <button className="btn btn-warning btn-sm text-white d-none d-sm-inline">Book Now</button>
+          
 
           {/* Hamburger Toggle – always visible */}
           {/* <button

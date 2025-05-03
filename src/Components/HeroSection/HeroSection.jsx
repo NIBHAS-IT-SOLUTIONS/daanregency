@@ -60,7 +60,7 @@ export default function HeroSection() {
               <div className="bg-dark bg-opacity-50 p-4 rounded">
                 <h6 className="text-uppercase mb-2" style={{ letterSpacing: '2px' }}>{slide.subtitle}</h6>
                 <h1 className="display-5 fw-bold mb-3">{slide.title}</h1>
-                <button className="btn btn-lg text-white px-4" style={{backgroundColor:'#d39f44'}}>{slide.button}</button>
+                <button className="btn btn-lg btn-block text-white px-4" style={{backgroundColor:'#d39f44'}}>{slide.button}</button>
               </div>
             </div>
           </div>
