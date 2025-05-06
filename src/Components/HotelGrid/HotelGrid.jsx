@@ -1,63 +1,66 @@
-import React from 'react';
+// import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './HotelGrid.css';
 
 const hotels = [
   {
     name: 'Deluxe Hotel',
     description:
-      'Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac turpis egestas. Etiam euismod tempor leo, in suscipit urna condimentum sed. Vivamus augue enim, consectetur ac interdum a, pulvinar ac massa. Nullam malesuada congue.',
-    image: 'https://via.placeholder.com/600x400?text=Hotel+1'
+      'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+    image: 'https://i.postimg.cc/RVRWNxWF/Facade-Night-1.jpg'
   },
   {
     name: 'Hotel Bora',
     description:
-      'Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac turpis egestas. Etiam euismod tempor leo, in suscipit urna condimentum sed.',
-    image: 'https://via.placeholder.com/600x400?text=Hotel+2'
+      'Etiam euismod tempor leo, in suscipit urna condimentum sed.',
+    image: 'https://i.postimg.cc/RVRWNxWF/Facade-Night-1.jpg'
   },
   {
     name: "D'Morvie",
     description:
-      'Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac turpis egestas. Etiam euismod tempor leo, in suscipit urna condimentum sed.',
-    image: 'https://via.placeholder.com/600x400?text=Hotel+3'
+      'Vivamus augue enim, consectetur ac interdum a, pulvinar ac massa.',
+    image: 'https://i.postimg.cc/RVRWNxWF/Facade-Night-1.jpg'
+  },
+  {
+    name: 'Palm Stay',
+    description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem.',
+    image: 'https://i.postimg.cc/RVRWNxWF/Facade-Night-1.jpg'
   }
 ];
 
 const HotelGrid = () => {
+  const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const container = scrollRef.current;
+
+    const isMobile = window.innerWidth <= 768;
+    if (!isMobile || !container) return;
+
+    let scrollInterval = setInterval(() => {
+      container.scrollBy({ left: 1, behavior: 'smooth' });
+    }, 3000); // adjust speed here
+
+    return () => clearInterval(scrollInterval);
+  }, []);
+
   return (
-    <div className="container py-5">
-         <h2 className='text-center display-3'>Featured Hotels</h2>
-         <br /><br />
-      {hotels.map((hotel, idx) => (
-        <div
-          className="row align-items-center mb-5"
-          key={idx}
-        >
-          {idx % 2 === 0 ? (
-            <>
-              <div className="col-md-6 mb-3 mb-md-0">
-                <img src={hotel.image} alt={hotel.name} className="img-fluid rounded" />
-              </div>
-              <div className="col-md-6">
-                <h5>{hotel.name}</h5>
-                <p>{hotel.description}</p>
-                <button className="btn btn-dark">Book Now</button>
-              </div>
-            </>
-          ) : (
-            <>
-              <div className="col-md-6 order-md-2 mb-3 mb-md-0">
-                <img src={hotel.image} alt={hotel.name} className="img-fluid rounded" />
-              </div>
-              <div className="col-md-6 order-md-1">
-                <h5>{hotel.name}</h5>
-                <p>{hotel.description}</p>
-                <button className="btn btn-dark">Book Now</button>
-              </div>
-            </>
-          )}
-        </div>
-      ))}
-       
+    <div className="hotel-grid-wrapper py-5">
+      <br />
+      <h2 className="text-center display-4 mb-5">Featured Hotels</h2>
+      <br />
+      <div className="hotel-scroll-container mx-5 px-5" ref={scrollRef}>
+        {hotels.map((hotel, idx) => (
+          <div className="hotel-card card mx-5 " key={idx}>
+            <img src={hotel.image} alt={hotel.name} className="card-img-top" />
+            <div className="card-body">
+              <h5 className="card-title">{hotel.name}</h5>
+              <p className="card-text">{hotel.description}</p>
+              <button className="btn btn-dark">Book Now</button>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

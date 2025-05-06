@@ -10,6 +10,8 @@ import Specialoffers from '../../Components/SpecialOffers/Specialoffers'
 import CounterSection from '../../Components/CountingSection/CounterSection'
 import { FaUtensils, FaGlassCheers, FaCar, FaSwimmer, FaSpa, FaDumbbell } from 'react-icons/fa';
 import { FaKey, FaHeadset, FaWifi } from 'react-icons/fa';
+import HighlightBar from '../../Components/HighlightBar/HighlightBar'
+
 function Home() {
   const facilities = [
     {
@@ -55,13 +57,16 @@ function Home() {
   return (
     <div >
          <div className="home-container">
+          <HighlightBar/>
           <Header/>
       <div className='hero'>
         <HeroSection />
         </div>
+       
         <div className='bookingbar '>
            <BookingBar />
         </div>
+        
         <div className='Specialoffers'>
           <Specialoffers/>
         </div>
@@ -75,7 +80,7 @@ function Home() {
         <section className="banner-section w-100 d-flex align-items-center">
       <div className="container text-center text-white">
         <h1 className="banner-title">Choose from a wide range of <br /> <strong>luxury rooms</strong>.</h1>
-        <button className="btn btn-light banner-button mt-4">BOOK NOW</button>
+        <button className="btn btn-warning banner-button mt-4">BOOK NOW</button>
       </div>
     </section>
         </div>

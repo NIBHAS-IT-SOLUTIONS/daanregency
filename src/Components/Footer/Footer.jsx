@@ -13,7 +13,7 @@ function Footer() {
 
     <section
              class="d-flex justify-content-between p-4"
-             style={{backgroundColor: "#6351ce"}}
+             style={{backgroundColor: "#000"}}
              >
 
       <div class="me-5">
@@ -50,7 +50,7 @@ function Footer() {
 
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
-            <h6 class="text-uppercase fw-bold">Company name</h6>
+            <h6 class="text-uppercase fw-bold">Daan Regency and Hotels</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
                 style={{width: "60px", backgroundColor: "#7c4dff", height: "2px"}}
@@ -64,22 +64,25 @@ function Footer() {
 
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
-            <h6 class="text-uppercase fw-bold">Products</h6>
+            <h6 class="text-uppercase fw-bold">Menu</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
-               style={{width: "60px", backgroundColor: "#7c4dff", height: "2px"}}
+               style={{width: "80px", backgroundColor: "#7c4dff", height: "2px"}}
                 />
             <p>
-              <a href="#!" class="text-white">MDBootstrap</a>
+              <a href="/" class="text-white">Home</a>
             </p>
             <p>
-              <a href="#!" class="text-white">MDWordPress</a>
+              <a href="/facilities" class="text-white">Facilities</a>
             </p>
             <p>
-              <a href="#!" class="text-white">BrandFlow</a>
+              <a href="/about" class="text-white">About</a>
             </p>
             <p>
-              <a href="#!" class="text-white">Bootstrap Angular</a>
+              <a href="/gallery" class="text-white">Gallery</a>
+            </p>
+            <p>
+              <a href="/contact" class="text-white">Contact</a>
             </p>
           </div>
 
@@ -111,10 +114,10 @@ function Footer() {
                 class="mb-4 mt-0 d-inline-block mx-auto"
                 style={{width: "60px", backgroundColor: "#7c4dff", height: "2px"}}
                 />
-            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            <p><i class="fas fa-home mr-3"></i> Kerala, India 10012, US</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@daan.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 91 123 465 7890</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 98 567 89</p>
           </div>
 
         </div>
@@ -126,9 +129,9 @@ function Footer() {
          class="text-center p-3"
         style={{backgroundColor: "rgba(0, 0, 0, 0.2)"}}
          >
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/"
-         >MDBootstrap.com</a
+      © 2025 Copyright:
+      <a class="text-white" href="https://daanregency.com/"
+         >Daan Regency</a
         >
     </div>
 
