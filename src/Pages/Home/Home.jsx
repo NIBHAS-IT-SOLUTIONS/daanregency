@@ -8,47 +8,59 @@ import HotelGrid from '../../Components/HotelGrid/HotelGrid'
 import Footer from '../../Components/Footer/Footer'
 import Specialoffers from '../../Components/SpecialOffers/Specialoffers'
 import CounterSection from '../../Components/CountingSection/CounterSection'
-import { FaUtensils, FaGlassCheers, FaCar, FaSwimmer, FaSpa, FaDumbbell } from 'react-icons/fa';
+import { FaUtensils,FaHotel, FaGlassCheers, FaCar, FaSwimmer, FaSpa, FaDumbbell } from 'react-icons/fa';
 import { FaKey, FaHeadset, FaWifi } from 'react-icons/fa';
 import HighlightBar from '../../Components/HighlightBar/HighlightBar'
 
 function Home() {
   const facilities = [
     {
-      icon: <FaUtensils />,
-      title: 'Restaurant',
+      icon: <FaHotel/>,
+      title: 'Kaloor',
       hours: '7:30 AM - 8:00 PM',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias officia...'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias officia...',
+      button: 'Book Now',
+      link:'https://be.aiosell.com/book/6741980d7b'
     },
     {
-      icon: <FaGlassCheers />,
-      title: 'Bar',
+      icon: <FaHotel/>,
+      title: 'Kottayam',
       hours: '6:00 PM - 11:00 PM',
-      description: 'Enjoy world-class cocktails and drinks in our luxurious lounge.'
+      description: 'Enjoy world-class cocktails and drinks in our luxurious lounge.',
+      button: 'Book Now',
+      link:'https://be.aiosell.com/book/6741980d7b'
     },
     {
-      icon: <FaCar />,
-      title: 'Pick-up',
+      icon: <FaHotel/>,
+      title: 'Thrissur',
       hours: '24/7',
-      description: 'Complimentary airport and local transport service available anytime.'
+      description: 'Complimentary airport and local transport service available anytime.',
+      button: 'Book Now',
+      link:'https://be.aiosell.com/book/6741980d7b'
     },
     {
-      icon: <FaSwimmer />,
-      title: 'Swimming Pool',
+      icon:<FaHotel/>,
+      title: 'Vazhakala',
       hours: '6:00 AM - 10:00 PM',
-      description: 'Olympic-sized pool with temperature control and lounge service.'
+      description: 'Olympic-sized pool with temperature control and lounge service.',
+      button: 'Book Now',
+      link:'https://be.aiosell.com/book/6741980d7b'
     },
     {
-      icon: <FaSpa />,
-      title: 'Spa',
+      icon: <FaHotel/>,
+      title: 'Karukappilly',
       hours: '10:00 AM - 9:00 PM',
-      description: 'Relax with professional massages and wellness treatments.'
+      description: 'Relax with professional massages and wellness treatments.',
+      button: 'Book Now',
+      link:'https://be.aiosell.com/book/6741980d7b'
     },
     {
-      icon: <FaDumbbell />,
-      title: 'Gym',
+      icon: <FaHotel/>,
+      title: 'Trivandrum',
       hours: '5:00 AM - 10:00 PM',
-      description: 'Fully equipped gym with personal trainers on request.'
+      description: 'Fully equipped gym with personal trainers on request.',
+      button: 'Book Now',
+      link:'https://be.aiosell.com/book/6741980d7b'
     }
   ];
   useEffect(() => {

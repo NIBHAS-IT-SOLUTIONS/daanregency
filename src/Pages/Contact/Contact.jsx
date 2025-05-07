@@ -1,11 +1,37 @@
-import React, { useEffect } from 'react'
+import React, { useEffect,useRef } from 'react'
 import Header from '../../Components/Header/Header'
 import './Contact.css'
 import Footer from '../../Components/Footer/Footer'
+import emailjs from '@emailjs/browser';
+
+
 function Contact() {
+
+  const form = useRef();
   useEffect(() => {
     document.title = 'Daan - Contact';
   }, []);
+  const sendEmail = async (event) => {
+    event.preventDefault();
+    console.log(form.current);
+    emailjs
+      .sendForm('service_1j4caxt', 'template_akja3k8', form.current, {
+        publicKey: '7R-FaYe_wGKzdQWYv',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+
+          window.alert("Message Sent");
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+    
+  
+
+  };
   return (
     
     <div>
@@ -47,21 +73,27 @@ function Contact() {
               <ul className="list-unstyled mb-4">
                 <li><strong>📍</strong> 198 West 21th Street, Suite 721 New York NY 10016</li>
                 <li><strong>📞</strong> +1235 2355 98</li>
-                <li><strong>📧</strong> info@yoursite.com</li>
-                <li><strong>🌐</strong> www.yoursite.com</li>
+                {/* <li><strong>📧</strong> info@yoursite.com</li> */}
+                
               </ul>
 
-              <form>
+              <form ref={form} onSubmit={sendEmail}>
                 <div className="row g-2">
                   <div className="col-md-6">
-                    <input type="text" className="form-control" placeholder="Name" />
+                    <input type="text" id="from_name"
+                   name="from_name" className="form-control" placeholder="Name" />
                   </div>
                   <div className="col-md-6">
-                    <input type="email" className="form-control" placeholder="Email" />
+                    <input type="email" 
+                     id="email"
+                     name="frommail"className="form-control" placeholder="Email" />
+                  </div>
+                  <div className="col-md-12">
+                    <input type="phone"  name="phone" className="form-control" placeholder="Phone" />
                   </div>
                 </div>
                 <div className="mt-3">
-                  <textarea rows="4" className="form-control" placeholder="Message"></textarea>
+                  <textarea rows="4" name="message" className="form-control" placeholder="Message"></textarea>
                 </div>
                 <div className="mt-3">
                   <button type="submit" className="btn btn-dark w-100">Send Message</button>

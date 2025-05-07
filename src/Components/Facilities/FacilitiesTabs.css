@@ -23,8 +23,12 @@
   }
   
   .facility-img {
-    background: linear-gradient(45deg, #999, #ccc); /* Placeholder */
+    width: 650px;
   }
+  @media (max-width: 768px) {
+    .facility-img {
+     width: 375px;
+    }}
   .services-section {
     background-color: #ffffff;
   }

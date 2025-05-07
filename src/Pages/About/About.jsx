@@ -58,9 +58,9 @@ export default function About() {
     </section> */}
      <section className="hero-section text-center text-white d-flex align-items-center justify-content-center my-10">
         <div>
-          <h2>Contact Us</h2>
+          <h2>About Us</h2>
           <p>
-           We Would Like to Hear From You
+          who we are, what we value, and how we make your stay unforgettable.
             
           </p>
         </div>

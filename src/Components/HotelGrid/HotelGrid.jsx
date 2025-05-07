@@ -1,4 +1,3 @@
-// import React from 'react';
 import React, { useEffect, useRef } from 'react';
 import './HotelGrid.css';
 
@@ -49,7 +48,7 @@ const HotelGrid = () => {
       <br />
       <h2 className="text-center display-4 mb-5">Featured Hotels</h2>
       <br />
-      <div className="hotel-scroll-container mx-5 px-5" ref={scrollRef}>
+      <div className="hotel-scroll-container mx-5 p-5" ref={scrollRef}>
         {hotels.map((hotel, idx) => (
           <div className="hotel-card card mx-5 " key={idx}>
             <img src={hotel.image} alt={hotel.name} className="card-img-top" />
