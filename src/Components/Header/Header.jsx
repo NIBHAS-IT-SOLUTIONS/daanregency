@@ -90,6 +90,7 @@ export default function Header() {
                 <a className="nav-link text-white fw-medium" href={`/${item.toLowerCase()}`}>
                   {item}
                 </a>
+               
               </li>
             ))}
 

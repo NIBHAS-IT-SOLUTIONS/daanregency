@@ -1,13 +1,16 @@
-.hero-section {
+.hero-section-services {
     height: 450px;
     padding-top: 10%;
-    background: linear-gradient(to right, #ffc800, #000000);
+   background:  url('https://i.postimg.cc/RVRWNxWF/Facade-Night-1.jpg') fixed  ;
+    /* background: linear-gradient(to right, #ffc800, #000000); */
     text-align: center;
+
   }
   
-  .hero-section h2 {
+  .hero-section-services h2 {
     font-size: 3rem;
     font-weight: bold;
+    
   }
   
   .hero-link {

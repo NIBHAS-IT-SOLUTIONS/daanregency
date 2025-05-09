@@ -1,11 +1,11 @@
-.hero-section {
+.hero-section-gallery {
     height: 450px;
     padding-top: 10%;
     background: linear-gradient(to right, #2c3e50, #4ca1af);
     text-align: center;
   }
   
-  .hero-section h2 {
+  .hero-section-gallery h2 {
     font-size: 3rem;
     font-weight: bold;
   }

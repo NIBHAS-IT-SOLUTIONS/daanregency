@@ -52,7 +52,7 @@ function Services() {
   return (
     <div>
         <Header/>
-        <section className="hero-section text-center text-white d-flex align-items-center justify-content-center my-10">
+        <section className="hero-section-services text-center text-white d-flex align-items-center justify-content-center my-10">
         <div>
           <h2>Facilities</h2>
           <p>

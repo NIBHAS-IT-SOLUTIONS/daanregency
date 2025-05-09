@@ -47,7 +47,7 @@ export default function Gallery() {
     <div>
       
       <Header/>
-      <section className="hero-section text-center text-white d-flex align-items-center justify-content-center my-10">
+      <section className="hero-section-gallery text-center text-white d-flex align-items-center justify-content-center my-10">
         <div>
           <h2>Gallery</h2>
           <p>

@@ -56,7 +56,7 @@ export default function About() {
         <p className="text-white">Learn more about who we are and what we do.</p>
       </div>
     </section> */}
-     <section className="hero-section text-center text-white d-flex align-items-center justify-content-center my-10">
+     <section className="hero-section-about text-center text-white d-flex align-items-center justify-content-center my-10">
         <div>
           <h2>About Us</h2>
           <p>
