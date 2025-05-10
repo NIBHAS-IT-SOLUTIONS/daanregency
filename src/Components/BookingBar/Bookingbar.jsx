@@ -61,9 +61,10 @@ const BookingBar = () => {
             Select Hotel
           </Dropdown.Toggle>
           <Dropdown.Menu>
-            <Dropdown.Item href="#">Hotel A</Dropdown.Item>
-            <Dropdown.Item href="#">Hotel B</Dropdown.Item>
-            <Dropdown.Item href="#">Hotel C</Dropdown.Item>
+            <Dropdown.Item href="#">Kochi</Dropdown.Item>
+            <Dropdown.Item href="#">Trivandrum </Dropdown.Item>
+            <Dropdown.Item href="#">Thrissur</Dropdown.Item>
+            <Dropdown.Item href="#">Kottayam</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
       </div>

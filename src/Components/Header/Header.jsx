@@ -39,7 +39,7 @@ export default function Header() {
       <div className="container-fluid px-0">
 
         <a className="navbar-brand d-flex align-items-center gap-2" href="/">
-          <img src={logo} alt="logo" height="90" />
+          <img src={logo} alt="logo"  />
           <h2 className="fw-bold text-light sm-fs-5 md-fs-1 lg-fs-1">Daan Hotels & Resorts</h2>
         </a>
 
@@ -85,7 +85,7 @@ export default function Header() {
                 ✉️ mail.dan@gmail.com
               </div>
             </li>
-            {['About', 'Facilities', 'Gallery', 'Contact'].map((item) => (
+            {['About', 'Facilities', 'Contact'].map((item) => (//, 'Gallery'
               <li key={item} className="nav-item mx-2">
                 <a className="nav-link text-white fw-medium" href={`/${item.toLowerCase()}`}>
                   {item}

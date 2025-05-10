@@ -3,22 +3,22 @@ import './HotelGrid.css';
 
 const hotels = [
   {
-    name: 'Deluxe Hotel',
+    name: 'Urban 24 Daris',
     description:
       'Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac turpis egestas. Etiam euismod tempor leo, in suscipit urna condimentum sed. Vivamus augue enim, consectetur ac interdum a, pulvinar ac massa. Nullam malesuada congue.',
-    image: 'https://picsum.photos/700/300'
+    image: 'https://i.postimg.cc/dVR3rJvh/ABI6859.jpg'
   },
   {
-    name: 'Hotel Bora',
+    name: 'Premium Quality Rooms',
     description:
       'Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac turpis egestas. Etiam euismod tempor leo, in suscipit urna condimentum sed.',
-    image: 'https://picsum.photos/700/300'
+    image: 'https://i.postimg.cc/QdPDFPKF/ABI6748-Edit.jpg'
   },
   {
     name: "D'Morvie",
     description:
       'Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac turpis egestas. Etiam euismod tempor leo, in suscipit urna condimentum sed.',
-    image: 'https://picsum.photos/700/300'
+    image: 'https://i.postimg.cc/mgySgcXk/ABI6877-Edit.jpg'
   }
 ];
 

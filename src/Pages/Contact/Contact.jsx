@@ -67,12 +67,11 @@ function Contact() {
             <div className="col-md-6">
               <h5>Our Address</h5>
               <p>
-                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                there live the blind texts.
+                Always welcome to our Premises
               </p>
               <ul className="list-unstyled mb-4">
-                <li><strong>📍</strong> 198 West 21th Street, Suite 721 New York NY 10016</li>
-                <li><strong>📞</strong> +1235 2355 98</li>
+                <li><strong>📍</strong> Daan Regency and Resorts, Kochi Trivandrum,Thrissur</li>
+                <li><strong>📞</strong> +91 98765 43210</li>
                 {/* <li><strong>📧</strong> info@yoursite.com</li> */}
                 
               </ul>

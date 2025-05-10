@@ -78,9 +78,9 @@ function Footer() {
             <p>
               <a href="/about" class="text-white">About</a>
             </p>
-            <p>
+            {/* <p>
               <a href="/gallery" class="text-white">Gallery</a>
-            </p>
+            </p> */}
             <p>
               <a href="/contact" class="text-white">Contact</a>
             </p>
@@ -94,16 +94,16 @@ function Footer() {
                style={{width: "60px", backgroundColor: "#7c4dff", height: "2px"}}
                 />
             <p>
-              <a href="#!" class="text-white">Your Account</a>
+              <a href="#!" class="text-white">Urbn24 Daris</a>
             </p>
             <p>
-              <a href="#!" class="text-white">Become an Affiliate</a>
+              <a href="#!" class="text-white">Orchid Kottayam</a>
             </p>
             <p>
-              <a href="#!" class="text-white">Shipping Rates</a>
+              <a href="#!" class="text-white">Yad Inn Kaloor</a>
             </p>
             <p>
-              <a href="#!" class="text-white">Help</a>
+              <a href="#!" class="text-white">Daan Residency</a>
             </p>
           </div>
 
@@ -114,7 +114,7 @@ function Footer() {
                 class="mb-4 mt-0 d-inline-block mx-auto"
                 style={{width: "60px", backgroundColor: "#7c4dff", height: "2px"}}
                 />
-            <p><i class="fas fa-home mr-3"></i> Kerala, India 10012, US</p>
+            <p><i class="fas fa-home mr-3"></i> Kerala, India </p>
             <p><i class="fas fa-envelope mr-3"></i> info@daan.com</p>
             <p><i class="fas fa-phone mr-3"></i> + 91 123 465 7890</p>
             <p><i class="fas fa-print mr-3"></i> + 01 98 567 89</p>

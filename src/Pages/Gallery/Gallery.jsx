@@ -9,24 +9,24 @@ import './Gallery.css';
 export default function Gallery() {
   const images = [
     {
-      src: 'https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg',
-      alt: 'Bridge',
+      src: 'https://i.postimg.cc/RVRWNxWF/Facade-Night-1.jpg',
+      alt: 'Facade',
     },
     {
-      src: 'https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg',
-      alt: 'Park',
+      src: 'https://i.postimg.cc/PfLLnBBC/Copy-of-Facade-5.jpg',
+      alt: 'Orchid Regency',
     },
     {
-      src: 'https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg',
-      alt: 'Tunnel',
+      src: 'https://i.postimg.cc/pdhSWmXg/Suite-10.jpg',
+      alt: 'Urbn24',
     },
     {
-      src: 'https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/traffic.jpg',
-      alt: 'Traffic',
+      src: 'https://i.postimg.cc/Kv1BsBqS/Premium-4.jpg',
+      alt: 'Premium',
     },
     {
-      src: 'https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg',
-      alt: 'Rails',
+      src: 'https://i.postimg.cc/Gt8tzJcX/Super-Deluxe-20.jpg',
+      alt: 'Super DElux',
     },
     {
       src: 'https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/coast.jpg',
@@ -51,7 +51,7 @@ export default function Gallery() {
         <div>
           <h2>Gallery</h2>
           <p>
-           We Would Like to Hear From You
+          Picture Walkthrough 
             
           </p>
         </div>

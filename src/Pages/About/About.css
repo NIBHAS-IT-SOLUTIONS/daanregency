@@ -1,7 +1,7 @@
 .hero-section-about {
   height: 450px;
   padding-top: 10%;
-  background: url('https://i.postimg.cc/PfLLnBBC/Copy-of-Facade-5.jpg') fixed ;
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
   text-align: center;
 }
 

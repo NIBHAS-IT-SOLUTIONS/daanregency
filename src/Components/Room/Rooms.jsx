@@ -4,57 +4,57 @@ import './Rooms.css'
 function Rooms() {
     const rooms = [
         {
-          title: 'Luxury Suite',
-          price: 90,
+          title: 'Suite Room',
+          price: 5000,
           guests: 4,
           bed: '1 King Bed',
           rating: 5,
-          image: 'luxury-suite.jpg',
+          image: 'https://i.postimg.cc/pdhSWmXg/Suite-10.jpg',
         },
         {
-          title: 'Standard Deluxe',
-          price: 75,
+          title: 'Premium Room',
+          price: 7500,
           guests: 6,
           bed: '2 Single Beds',
           rating: 4,
-          image: 'standard-deluxe.jpg',
+          image: 'https://i.postimg.cc/Kv1BsBqS/Premium-4.jpg',
         },
         {
-          title: 'The Penthouse',
-          price: 200,
-          oldPrice: 250,
+          title: 'Super delux Room',
+          price: 9000,
+          oldPrice: 9999,
           discount: '20%',
           guests: 6,
           bed: '2 King Beds',
           rating: 5,
-          image: 'penthouse.jpg',
+          image: 'https://i.postimg.cc/Gt8tzJcX/Super-Deluxe-20.jpg',
         },
-        {
-          title: 'Grand Suite Room',
-          price: 80,
-          guests: 4,
-          bed: '1 King Bed',
-          rating: 5,
-          image: 'grand-suite.jpg',
-        },
-        {
-          title: 'Junior Suite Room',
-          price: 69,
-          oldPrice: 81.18,
-          discount: '15%',
-          guests: 3,
-          bed: '1 Double Bed',
-          rating: 5,
-          image: 'junior-suite.jpg',
-        },
-        {
-          title: 'Standard Room',
-          price: 80,
-          guests: 4,
-          bed: '1 Double Bed',
-          rating: 4,
-          image: 'standard-room.jpg',
-        },
+        // {
+        //   title: 'Grand Suite Room',
+        //   price: 80,
+        //   guests: 4,
+        //   bed: '1 King Bed',
+        //   rating: 5,
+        //   image: 'grand-suite.jpg',
+        // },
+        // {
+        //   title: 'Junior Suite Room',
+        //   price: 69,
+        //   oldPrice: 81.18,
+        //   discount: '15%',
+        //   guests: 3,
+        //   bed: '1 Double Bed',
+        //   rating: 5,
+        //   image: 'junior-suite.jpg',
+        // },
+        // {
+        //   title: 'Standard Room',
+        //   price: 80,
+        //   guests: 4,
+        //   bed: '1 Double Bed',
+        //   rating: 4,
+        //   image: 'standard-room.jpg',
+        // },
       ];
   return (
     <div className="container py-4">
@@ -64,7 +64,7 @@ function Rooms() {
             <div className="card h-100">
               <div className="position-relative">
                 <img
-                  src={`images/${room.image}`}
+                  src={`${room.image}`}
                   className="card-img-top"
                   alt={room.title}
                 />
@@ -89,10 +89,10 @@ function Rooms() {
                   From{' '}
                   {room.oldPrice && (
                     <span className="text-muted text-decoration-line-through me-1">
-                      ${room.oldPrice}
+                      ₹{room.oldPrice}
                     </span>
                   )}
-                  <strong>${room.price}</strong>
+                  <strong>₹{room.price}</strong>
                 </p>
                 <button className="btn btn-warning text-white">Book Now</button>
               </div>
