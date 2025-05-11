@@ -50,15 +50,23 @@ export default function About() {
   return (
     <div className='bg-dark'>
         <Header/>
-        {/* <section className="about-hero d-flex align-items-center text-center">
-      <div className="container">
-        <h1 className="display-4 text-white fw-bold">About Us</h1>
-        <p className="text-white">Learn more about who we are and what we do.</p>
-      </div>
-    </section> */}
-     <section className="hero-section-about text-center text-white d-flex align-items-center justify-content-center my-10">
+        
+     
+       <section className="d-flex img-fluid flex-column justify-content-center align-items-center text-white text-center"
+       style={{
+                      height: '450px',
+                      backgroundImage: `url('https://i.postimg.cc/rw2PGwr5/gallery.png')`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat',
+                      backgroundAttachment: 'scroll',
+                      width: '100%',
+                    }}>
         <div>
-          <h2>About Us</h2>
+          <h2 style={{
+            fontSize:'3rem',
+            fontWeight:'bold'
+          }}>About Us</h2>
           <p>
           who we are, what we value, and how we make your stay unforgettable.
             

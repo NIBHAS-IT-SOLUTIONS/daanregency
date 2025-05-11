@@ -4,6 +4,7 @@ import Footer from '../../Components/Footer/Footer'
 import 'baguettebox.js/dist/baguetteBox.min.css';
 import baguetteBox from 'baguettebox.js';
 import './Gallery.css';
+import GalleryComponent from '../../Components/GalleryComponent/GalleryComponent';
 
 
 export default function Gallery() {
@@ -47,70 +48,33 @@ export default function Gallery() {
     <div>
       
       <Header/>
-      <section className="hero-section-gallery text-center text-white d-flex align-items-center justify-content-center my-10">
+      <section className="d-flex flex-column justify-content-center align-items-center text-white text-center"
+       style={{
+                      height: '450px',
+                      backgroundImage: `url('https://i.postimg.cc/rw2PGwr5/gallery.png')`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center center',
+                      backgroundRepeat: 'no-repeat',
+                      backgroundAttachment: 'scroll'
+                    }}>
         <div>
-          <h2>Gallery</h2>
+          <h2 style={{
+            fontSize:'3rem',
+            fontWeight:'bold'
+          }}>Gallery</h2>
           <p>
           Picture Walkthrough 
             
           </p>
         </div>
       </section>
-
-      {/* <div class="row ">
-      <div className="col-4 col-sm-4 col-md-4 col-lg-4">
-    <img src="https://picsum.photos/800/600?random=1" />
-    <img src="https://picsum.photos/600/800?random=1"/>
-    <img src="https://picsum.photos/800/600?random=2"/>
-    <img src="https://picsum.photos/600/800?random=2"/>
-    <img src="https://picsum.photos/800/600?random=3"/>
-    <img src="https://picsum.photos/600/800?random=3"/>
-  </div>
-   
-  <div className="col-4 col-sm-4 col-md-4 col-lg-4">
-    <img src="https://picsum.photos/600/800?random=4"/>
-    <img src="https://picsum.photos/800/600?random=4"/>
-    <img src="https://picsum.photos/600/800?random=5"/>
-    <img src="https://picsum.photos/800/600?random=5"/>
-    <img src="https://picsum.photos/600/800?random=6"/>
-    <img src="https://picsum.photos/800/600?random=6"/>
-  </div>
-  <div className="col-4 col-sm-4 col-md-4 col-lg-4">
-    <img src="https://picsum.photos/800/600?random=7"/>
-    <img src="https://picsum.photos/600/800?random=7"/>
-    <img src="https://picsum.photos/800/600?random=8"/>
-    <img src="https://picsum.photos/600/800?random=8"/>
-    <img src="https://picsum.photos/800/600?random=9"/>
-    <img src="https://picsum.photos/600/800?random=9"/>
-  </div>
- 
-</div> */}
- {/* <div className="container gallery-container">
+      <br />
+          <h2 className='display-5 text-center'>Urban 24 Dariss</h2>
+      <GalleryComponent images={images}/>
+      <br />
+          <h2 className='display-5 text-center'>Urban 24 Dariss</h2>
+      <GalleryComponent images={images}/>
       
-      <div className="tz-gallery">
-        <div className="row">
-          {images.map((img, index) => (
-            <div className="col-sm-6 col-md-4" key={index}>
-              <a className="lightbox" href={img.src } data-caption={img.alt}>
-                <img src={img.src} alt={img.alt} />
-              </a>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div> */}
-    <div className="container gallery-container">
-      <div className="tz-gallery row">
-        {images.map((img,index) => (
-          <div className="col-sm-6 col-md-3" key={index}>
-            <a className="lightbox" href={img.src} data-caption={img.alt} >
-              <img src={img.src} alt={img.alt}  className="img-responsive" />
-            </a>
-          </div>
-        ))}
-      </div>
-    </div>
-
       <Footer/>
       
       </div>

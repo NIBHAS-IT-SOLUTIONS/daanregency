@@ -38,11 +38,31 @@ function Contact() {
         <Header/>
         <div className="contact-page">
       {/* Hero Section */}
-      <section className="hero-section text-center text-white d-flex align-items-center justify-content-center my-10">
+      {/* <section className="hero-section text-center text-white d-flex align-items-center justify-content-center my-10">
         <div>
           <h2>Contact Us</h2>
           <p>
            We Would Like to Hear From You
+            
+          </p>
+        </div>
+      </section> */}
+            <section className="d-flex flex-column justify-content-center align-items-center text-white text-center"
+       style={{
+                      height: '450px',
+                      backgroundImage: `url('https://i.postimg.cc/PfLLnBBC/Copy-of-Facade-5.jpg')`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center center',
+                      backgroundRepeat: 'no-repeat',
+                      backgroundAttachment: 'scroll'
+                    }}>
+        <div>
+          <h2 style={{
+            fontSize:'3rem',
+            fontWeight:'bold'
+          }}>Contact Us</h2>
+          <p>
+          We Would Like to Hear From You 
             
           </p>
         </div>

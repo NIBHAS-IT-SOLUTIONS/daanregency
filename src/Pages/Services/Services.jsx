@@ -64,11 +64,23 @@ function Services() {
   return (
     <div>
         <Header/>
-        <section className="hero-section-services text-center text-white d-flex align-items-center justify-content-center my-10">
+  
+       <section className="d-flex flex-column justify-content-center align-items-center text-white text-center"
+       style={{
+                      height: '450px',
+                      backgroundImage: `url('https://i.postimg.cc/rw2PGwr5/gallery.png')`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center center',
+                      backgroundRepeat: 'no-repeat',
+                      backgroundAttachment: 'scroll'
+                    }}>
         <div>
-          <h2>Facilities</h2>
+          <h2 style={{
+            fontSize:'3rem',
+            fontWeight:'bold'
+          }}>Facilities</h2>
           <p>
-           Let's See What we Provide 
+          Let's See What we Provide 
             
           </p>
         </div>

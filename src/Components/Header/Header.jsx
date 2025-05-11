@@ -85,7 +85,7 @@ export default function Header() {
                 ✉️ mail.dan@gmail.com
               </div>
             </li>
-            {['About', 'Facilities', 'Contact'].map((item) => (//, 'Gallery'
+            {['About', 'Facilities', 'Gallery' ,'Contact'].map((item) => (//, 'Gallery'
               <li key={item} className="nav-item mx-2">
                 <a className="nav-link text-white fw-medium" href={`/${item.toLowerCase()}`}>
                   {item}
