@@ -11,6 +11,7 @@ import CounterSection from '../../Components/CountingSection/CounterSection'
 import { FaUtensils,FaHotel, FaGlassCheers, FaCar, FaSwimmer, FaSpa, FaDumbbell } from 'react-icons/fa';
 import { FaKey, FaHeadset, FaWifi } from 'react-icons/fa';
 import HighlightBar from '../../Components/HighlightBar/HighlightBar'
+import Offers from '../../Components/Offers/Offers'
 
 function Home() {
   const facilities = [
@@ -80,7 +81,8 @@ function Home() {
         </div> */}
         
         <div className='Specialoffers'>
-          <Specialoffers/>
+          {/* <Specialoffers/> */}
+          <Offers/>
         </div>
         <div>
           <CounterSection/>

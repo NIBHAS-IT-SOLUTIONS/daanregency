@@ -50,7 +50,7 @@ function Contact() {
             <section className="d-flex flex-column justify-content-center align-items-center text-white text-center"
        style={{
                       height: '450px',
-                      backgroundImage: `url('https://i.postimg.cc/PfLLnBBC/Copy-of-Facade-5.jpg')`,
+                      backgroundImage: `url('https://i.postimg.cc/QxVrVMr3/Untitled-design-28.png')`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center center',
                       backgroundRepeat: 'no-repeat',

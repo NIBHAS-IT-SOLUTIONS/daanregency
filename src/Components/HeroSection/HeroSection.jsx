@@ -22,8 +22,8 @@ const HeroSection = () => {
                   <span className="text-warning"> Check Availability.</span>
                 </p>
 
-                <Form className="room-search p-4 rounded bg-dark text-white mt-4">
-                  <Row className="g-3">
+                <Form className="room-search p-3 rounded bg-dark text-white mt-5">
+                  <Row className="g-2">
                   <Col xs={12} md={6} lg={2}>
                     <Form.Label>Hotel</Form.Label>
                       <Form.Select>

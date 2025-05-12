@@ -23,7 +23,7 @@ const Header = () => {
           <Navbar.Collapse>
             <Nav className="mx-auto text-center">
               <Nav.Link href='/' className="text-gold fw-bold px-2 nav-link-custom">
-                Home
+                 Home
               </Nav.Link>
               {['About', 'Gallery', 'Facilities', 'Contact'].map((link, idx) => (
                 <Nav.Link key={idx} href={`/${link.toLowerCase()}`} className="text-gold fw-bold px-2 nav-link-custom">
