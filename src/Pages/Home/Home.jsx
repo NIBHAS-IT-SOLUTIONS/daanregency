@@ -69,15 +69,15 @@ function Home() {
   return (
     <div >
          <div className="home-container">
-          <HighlightBar/>
+          {/* <HighlightBar/> */}
           <Header/>
       <div className='hero'>
         <HeroSection />
         </div>
        
-        <div className='bookingbar '>
+        {/* <div className='bookingbar '>
            <BookingBar />
-        </div>
+        </div> */}
         
         <div className='Specialoffers'>
           <Specialoffers/>

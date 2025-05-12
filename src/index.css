@@ -3,6 +3,7 @@
 @import 'react-datepicker/dist/react-datepicker.css';
 
 .transition-navbar {
+  background-color: transparent;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 body {

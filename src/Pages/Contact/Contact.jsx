@@ -56,7 +56,7 @@ function Contact() {
                       backgroundRepeat: 'no-repeat',
                       backgroundAttachment: 'scroll'
                     }}>
-        <div>
+        <div >
           <h2 style={{
             fontSize:'3rem',
             fontWeight:'bold'
