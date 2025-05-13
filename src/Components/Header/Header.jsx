@@ -44,7 +44,7 @@ const Header = () => {
       >
         <Container>
           <Navbar.Brand as={Link} to="/" className="fw-bold text-gold fs-3">
-            <img src={logo} width={120} alt="" srcSet="" />Daan.
+            <img src={logo} width={100} alt="" srcSet="" />Daan.
           </Navbar.Brand>
           <Navbar.Toggle onClick={handleToggle} />
           <Navbar.Collapse>

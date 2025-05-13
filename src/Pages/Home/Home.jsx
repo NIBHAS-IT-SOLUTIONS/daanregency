@@ -6,7 +6,7 @@ import './Home.css'
 import FacilitiesTabs from '../../Components/Facilities/FacilitiesTabs'
 import HotelGrid from '../../Components/HotelGrid/HotelGrid'
 import Footer from '../../Components/Footer/Footer'
-import Specialoffers from '../../Components/SpecialOffers/Specialoffers'
+
 import CounterSection from '../../Components/CountingSection/CounterSection'
 import { FaUtensils,FaHotel, FaGlassCheers, FaCar, FaSwimmer, FaSpa, FaDumbbell } from 'react-icons/fa';
 import { FaKey, FaHeadset, FaWifi } from 'react-icons/fa';
@@ -81,7 +81,7 @@ function Home() {
         </div> */}
         
         <div className='Specialoffers'>
-          {/* <Specialoffers/> */}
+         
           <Offers/>
         </div>
         <div>

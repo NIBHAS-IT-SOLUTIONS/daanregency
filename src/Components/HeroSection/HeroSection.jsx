@@ -22,19 +22,20 @@ const HeroSection = () => {
   ];
 
   return (
-    <Carousel fade controls={true} indicators={true} interval={3000} style={{ minHeight: '100vh' }}>
+    <Carousel fade controls={true} indicators={false} interval={3000} style={{ minHeight: '100vh' }}>
       {Carouseldata.map((data, i) => (
         <Carousel.Item key={i}>
           <div className="carousel-bg" style={{ backgroundImage: `url(${data.url})` }}>
             <div className="overlay d-flex align-items-center">
-              <Container className="text-center text-white">
+              <Container className="text-center text-white mt-5 py-5" >
+              <br />
                 <h1 className="hero-title">{data.HotelName}</h1>
                 <p className="hero-subtitle">
-                  Hotale has a series of lavish and comfortable hotels and residences in Asia, Europe, and America.
+                  {data.description}
                   <span className="text-warning"> Check Availability.</span>
                 </p>
 <br /><br /><br />
-                <Form className="room-search p-4 rounded bg-dark text-white mt-5">
+                <Form className="room-search p-4 rounded bg-dark text-white">
                   <Row className="g-2">
                   <Col xs={12} md={6} lg={3}>
                     <Form.Label>Hotel</Form.Label>
