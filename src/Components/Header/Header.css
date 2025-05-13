@@ -8,15 +8,37 @@
 /* Default navbar when at top */
 .navbar-top {
   background-color: rgba(255, 255, 255, 0); /* transparent */
+  color: white;
   border-bottom: 1px solid transparent;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 1s ease, box-shadow 0.3s ease;
 }
-
+.navbar-open {
+  background-color: #fff !important;
+  color: #000;
+  transition: background-color 0.3s ease;
+  
+}
 .navbar-scrolled {
+  color: #000;
   background-color: #ffffff !important; /* solid white after scroll */
   border-bottom: 1px solid #eee;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
+/* When the menu is expanded (mobile view), make background white */
+.navbar-collapse.show {
+  background-color: #fff;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px 10px 10px 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Optional: ensure nav links are dark on white background */
+.navbar-collapse.show .nav-link {
+  color: #333 !important;
+}
+
 
 .navbar-top .nav-link {
   color: #ffffff !important; /* gold */
@@ -25,6 +47,8 @@
 .navbar-scrolled .nav-link {
   color: #000 !important; /* black */
 }
+
+
 
 .top-bar {
   font-size: 0.85rem;
@@ -39,6 +63,10 @@
 
 .nav-link-custom {
   position: relative;
+  color: #ece1e1;
+}
+.nav-link-custom :hover {
+  color: #b48a53;
 }
 
 .nav-link-custom.active::after {
@@ -52,3 +80,5 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+

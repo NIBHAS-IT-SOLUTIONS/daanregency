@@ -1,10 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Header.css';
-import { Container, Navbar, Nav, Button, Dropdown } from 'react-bootstrap';
+import { Container, Navbar, Nav, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import logo from '../../Images/logo.png';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const navRef = useRef();
 
+  const handleToggle = () => {
+    setMenuOpen((prev) => !prev);
+  };
+
+  // Close menu on outside click
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuOpen && navRef.current && !navRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [menuOpen]);
+
+  // Scroll logic
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', onScroll);
@@ -12,28 +33,40 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="header-wrapper">
-  <Navbar
-    expand="lg"
-    className={`main-nav ${scrolled ? 'navbar-scrolled' : 'navbar-top'}`}
-  >
+    <div className="header-wrapper" ref={navRef}>
+      <Navbar
+        expand="lg"
+        expanded={menuOpen} // controls menu visibility
+        variant={scrolled || menuOpen ? 'light' : 'dark'}
+        className={`main-nav ${
+          menuOpen ? 'navbar-open' : scrolled ? 'navbar-scrolled' : 'navbar-top'
+        }`}
+      >
         <Container>
-          <Navbar.Brand href="/" className="fw-bold text-gold fs-3">Hotale.</Navbar.Brand>
-          <Navbar.Toggle />
+          <Navbar.Brand as={Link} to="/" className="fw-bold text-gold fs-3">
+            <img src={logo} width={120} alt="" srcSet="" />Daan.
+          </Navbar.Brand>
+          <Navbar.Toggle onClick={handleToggle} />
           <Navbar.Collapse>
             <Nav className="mx-auto text-center">
-              <Nav.Link href='/' className="text-gold fw-bold px-2 nav-link-custom">
-                 Home
+              <Nav.Link as={Link} to="/" className="text-gold fw-bold px-2 nav-link-custom">
+                Home
               </Nav.Link>
               {['About', 'Gallery', 'Facilities', 'Contact'].map((link, idx) => (
-                <Nav.Link key={idx} href={`/${link.toLowerCase()}`} className="text-gold fw-bold px-2 nav-link-custom">
+                <Nav.Link
+                  as={Link}
+                  key={idx}
+                  to={`/${link.toLowerCase()}`}
+                  className="text-gold fw-bold px-2 nav-link-custom"
+                >
                   {link}
                 </Nav.Link>
               ))}
             </Nav>
             <div className="d-flex flex-column flex-md-row align-items-center gap-2 mt-3 mt-md-0">
-              
-              <Button variant="outline-warning" className="fw-bold">BOOK NOW</Button>
+              <Button variant="outline-warning" className="fw-bold">
+                BOOK NOW
+              </Button>
             </div>
           </Navbar.Collapse>
         </Container>

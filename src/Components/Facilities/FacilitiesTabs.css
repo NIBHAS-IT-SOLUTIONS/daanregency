@@ -23,16 +23,17 @@
   }
   
   .facility-img {
-    width: 500px;
+    width: 90%;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 750px) {
     .facility-img {
-     width: 375px;
+     width: 90%;
     }}
-    @media (max-width: 1200px) {
+    @media (min-width: 1200px) and (max-width: 1400px) {
       .facility-img {
-       width: 450px;
-      }}
+        width: 90%;
+      }
+    }
   .services-section {
     background-color: #ffffff;
   }

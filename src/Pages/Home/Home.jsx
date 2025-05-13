@@ -85,18 +85,19 @@ function Home() {
           <Offers/>
         </div>
         <div>
-          <CounterSection/>
+        <section className="banner-section w-100 d-flex align-items-center">
+      <div className="container text-center text-white">
+        <h1 className="banner-title">Choose from a wide range of <br /> <strong>luxury rooms</strong>.</h1>
+        <button className="btn btn-light banner-button mt-4">BOOK NOW</button>
+      </div>
+    </section>
         </div>
         <div className='Hotelgrid'>
           <HotelGrid/>
         </div>
+       
         <div>
-        <section className="banner-section w-100 d-flex align-items-center">
-      <div className="container text-center text-white">
-        <h1 className="banner-title">Choose from a wide range of <br /> <strong>luxury rooms</strong>.</h1>
-        <button className="btn btn-warning banner-button mt-4">BOOK NOW</button>
-      </div>
-    </section>
+          <CounterSection/>
         </div>
       <div className='facilities'>
         <FacilitiesTabs facilities={facilities} from='true'/>
