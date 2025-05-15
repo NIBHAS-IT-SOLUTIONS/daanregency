@@ -46,12 +46,12 @@ export default function Offers() {
                 <div className="item" onClick={() => handleCopy(item.code)}>
                   <div className="offer-percent">{item.percent}</div>
                   <br />
-                  <h4>{item.title}</h4>
+                  <h4 >{item.title}</h4>
                   <br />
                   <p>{item.desc}</p>
                   <br />
                   <div className="offer-hover">
-                    <h4>{item.title}</h4>
+                    <h4 >{item.title}</h4>
                     <p>{item.desc}</p>
                     <div className="offer-code">Code: <strong>{item.code}</strong></div>
                     {copiedCode === item.code && (

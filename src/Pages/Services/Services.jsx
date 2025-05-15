@@ -7,6 +7,8 @@ import { FaUtensils, FaGlassCheers, FaCar, FaSwimmer, FaSpa, FaDumbbell } from '
 import { FaKey, FaHeadset, FaWifi } from 'react-icons/fa';
 import CounterSection from '../../Components/CountingSection/CounterSection'
 import Rooms from '../../Components/Room/Rooms'
+import { useState } from 'react'
+import Loading from '../../utils/Loading/Loading'
 function Services() {
    const facilities = [
       {
@@ -58,28 +60,38 @@ function Services() {
       link:'https://be.aiosell.com/book/6741980d7b'
       }
     ];
-    useEffect(() => {
-      document.title = 'Daan - Facilities';
-    }, []);
+  const [loading, setLoading] = useState(true);
+       useEffect(() => {
+          document.title = 'Daan - Facilities';
+     
+         setTimeout(() => {
+           setLoading(false); // Hide loader after 2 seconds
+         }, 2000);
+       }, []);
   return (
     <div>
         <Header/>
-  
-       <section className="d-flex flex-column justify-content-center align-items-center text-white text-center"
+         {loading ? (
+        <Loading />
+      ) : (
+  <div>
+       <section className="d-flex flex-column justify-content-center bg-dark align-items-center text-white text-center"
        style={{
                       height: '450px',
                       backgroundImage: `url('https://i.postimg.cc/rw2PGwr5/gallery.png')`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center center',
                       backgroundRepeat: 'no-repeat',
-                      backgroundAttachment: 'scroll'
+                      backgroundAttachment: 'scroll',
+                      
                     }}>
         <div>
           <h2 style={{
+            fontFamily: 'Expletus Sans',                                   
             fontSize:'3rem',
             fontWeight:'bold'
           }}>Facilities</h2>
-          <p>
+          <p style={{ fontFamily: 'Tree Ghost',fontSize:'1.5rem'}}>
           Let's See What we Provide 
             
           </p>
@@ -103,6 +115,7 @@ function Services() {
  <div>
           <CounterSection/>
         </div>
+        </div>)}
          <Footer/>
         </div>
   )

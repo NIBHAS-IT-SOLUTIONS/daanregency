@@ -1,16 +1,22 @@
-import React, { useEffect,useRef } from 'react'
+import React, { useEffect,useRef, useState } from 'react'
 import Header from '../../Components/Header/Header'
 import './Contact.css'
 import Footer from '../../Components/Footer/Footer'
 import emailjs from '@emailjs/browser';
+import Loading from '../../utils/Loading/Loading';
 
 
 function Contact() {
 
   const form = useRef();
-  useEffect(() => {
-    document.title = 'Daan - Contact';
-  }, []);
+   const [loading, setLoading] = useState(true);
+      useEffect(() => {
+         document.title = 'Daan - Contact';
+    
+        setTimeout(() => {
+          setLoading(false); // Hide loader after 2 seconds
+        }, 2000);
+      }, []);
   const sendEmail = async (event) => {
     event.preventDefault();
     console.log(form.current);
@@ -36,17 +42,11 @@ function Contact() {
     
     <div>
         <Header/>
+        {loading ? (
+        <Loading />
+      ) : (
         <div className="contact-page">
-      {/* Hero Section */}
-      {/* <section className="hero-section text-center text-white d-flex align-items-center justify-content-center my-10">
-        <div>
-          <h2>Contact Us</h2>
-          <p>
-           We Would Like to Hear From You
-            
-          </p>
-        </div>
-      </section> */}
+    
             <section className="d-flex flex-column justify-content-center align-items-center text-white text-center"
        style={{
                       height: '450px',
@@ -58,10 +58,11 @@ function Contact() {
                     }}>
         <div >
           <h2 style={{
+           fontFamily: 'Expletus Sans',                                   
             fontSize:'3rem',
             fontWeight:'bold'
           }}>Contact Us</h2>
-          <p>
+          <p style={{ fontFamily: 'Tree Ghost',fontSize:'1.5rem'}}>
           We Would Like to Hear From You 
             
           </p>
@@ -122,7 +123,7 @@ function Contact() {
           </div>
         </div>
       </section>
-    </div>
+    </div>)}
     <Footer/>
         </div>
   )

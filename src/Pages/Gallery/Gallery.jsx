@@ -1,10 +1,9 @@
-import React,{ useEffect, useRef } from 'react'
+import React,{ useEffect, useRef, useState } from 'react'
 import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
-import 'baguettebox.js/dist/baguetteBox.min.css';
-import baguetteBox from 'baguettebox.js';
 import './Gallery.css';
 import GalleryComponent from '../../Components/GalleryComponent/GalleryComponent';
+import Loading from '../../utils/Loading/Loading';
 
 
 export default function Gallery() {
@@ -34,20 +33,24 @@ export default function Gallery() {
       alt: 'Coast',
     },
   ];  
-  
-  useEffect(() => {
-    document.title = 'Daan - Gallery';
-  }, []);
- 
+  const [loading, setLoading] = useState(true);
     useEffect(() => {
-
-      baguetteBox.run('.tz-gallery', { animation: 'fadeIn' });
+       document.title = 'Daan - Gallery';
+  
+      setTimeout(() => {
+        setLoading(false); // Hide loader after 2 seconds
+      }, 2000);
     }, []);
+
   
   return (
     <div>
       
       <Header/>
+      {loading ? (
+        <Loading/>
+      ) : (
+        <div>
       <section className="d-flex flex-column justify-content-center align-items-center text-white text-center"
        style={{
                       height: '450px',
@@ -59,10 +62,11 @@ export default function Gallery() {
                     }}>
         <div>
           <h2 style={{
+             fontFamily: 'Expletus Sans',                                   
             fontSize:'3rem',
             fontWeight:'bold'
           }}>Gallery</h2>
-          <p>
+          <p style={{ fontFamily: 'Tree Ghost',fontSize:'1.5rem'}}>
           Picture Walkthrough 
             
           </p>
@@ -74,7 +78,7 @@ export default function Gallery() {
       <br />
           <h2 className='display-5 text-center'>Urban 24 Dariss</h2>
       <GalleryComponent images={images}/>
-      
+      </div>)}
       <Footer/>
       
       </div>

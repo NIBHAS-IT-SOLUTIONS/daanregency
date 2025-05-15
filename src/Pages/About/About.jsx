@@ -1,8 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../../Components/Header/Header'
 import './About.css'
 import aboutimage from '../../Images/slide2.jpg'
 import Footer from '../../Components/Footer/Footer';
+import Loading from '../../utils/Loading/Loading';
+
+                
 export default function About() {
   const features = [
     {
@@ -44,13 +47,22 @@ export default function About() {
   ];
 
 
-  useEffect(() => {
-    document.title = 'Daan - About';
-  }, []);
+ const [loading, setLoading] = useState(true);
+      useEffect(() => {
+         document.title = 'Daan - About';
+    
+        setTimeout(() => {
+          setLoading(false); // Hide loader after 2 seconds
+        }, 2000);
+      }, []);
   return (
     <div className='bg-dark'>
         <Header/>
-        
+         <Header/>
+        {loading ? (
+        <Loading />
+      ) : (
+        <div>
      
        <section className="d-flex img-fluid flex-column justify-content-center align-items-center text-white text-center"
        style={{
@@ -63,18 +75,19 @@ export default function About() {
                       width: '100%',
                     }}>
         <div>
-          <h2 style={{
+          <h2  style={{
+            fontFamily: 'Expletus Sans',                                   
             fontSize:'3rem',
             fontWeight:'bold'
           }}>About Us</h2>
-          <p>
+          <p  style={{ fontFamily: 'Tree Ghost',fontSize:'1.5rem'}}>
           who we are, what we value, and how we make your stay unforgettable.
             
           </p>
         </div>
       </section>
     <section className="our-story-section d-flex align-items-center">
-      <div className="container-fluid">
+      <div className="container-fluid mt-5 mb-5">
         <div className="row no-gutters">
           <div className="col-lg-6">
             <img
@@ -207,6 +220,7 @@ export default function About() {
         </div>
       </div>
     </section>
+    </div>)}
     <Footer/>
         </div>
   )

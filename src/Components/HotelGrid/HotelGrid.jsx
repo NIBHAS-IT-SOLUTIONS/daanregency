@@ -25,7 +25,7 @@ const hotels = [
 const HotelGrid = () => {
   return (
     <div className="container py-5">
-         <h2 className='text-center display-3'>Featured Hotels</h2>
+         <h2 className='text-center display-3' style={{fontFamily:'Gitky Trial'}}>Featured Hotels</h2>
          <br /><br />
       {hotels.map((hotel, idx) => (
         <div
