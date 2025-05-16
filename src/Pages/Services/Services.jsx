@@ -14,15 +14,15 @@ function Services() {
       {
         icon: <FaUtensils />,
         title: 'Restaurant',
-        hours: '7:30 AM - 8:00 PM',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias officia...',
+        hours: ' 7:30 AM - 8:00 PM',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing .',
         button: 'Book Now',
       link:'https://be.aiosell.com/book/6741980d7b'
       },
       {
         icon: <FaGlassCheers />,
         title: 'Bar',
-        hours: '6:00 PM - 11:00 PM',
+        hours: 'Service Hours : 6:00 PM - 11:00 PM',
         description: 'Enjoy world-class cocktails and drinks in our luxurious lounge.',
         button: 'Book Now',
       link:'https://be.aiosell.com/book/6741980d7b'
@@ -30,7 +30,7 @@ function Services() {
       {
         icon: <FaCar />,
         title: 'Pick-up',
-        hours: '24/7',
+        hours: 'Service Hours : 24/7',
         description: 'Complimentary airport and local transport service available anytime.',
         button: 'Book Now',
       link:'https://be.aiosell.com/book/6741980d7b'
@@ -38,7 +38,7 @@ function Services() {
       {
         icon: <FaSwimmer />,
         title: 'Swimming Pool',
-        hours: '6:00 AM - 10:00 PM',
+        hours: 'Service Hours : 6:00 AM - 10:00 PM',
         description: 'Olympic-sized pool with temperature control and lounge service.',
         button: 'Book Now',
       link:'https://be.aiosell.com/book/6741980d7b'
@@ -46,7 +46,7 @@ function Services() {
       {
         icon: <FaSpa />,
         title: 'Spa',
-        hours: '10:00 AM - 9:00 PM',
+        hours: 'Service Hours : 10:00 AM - 9:00 PM',
         description: 'Relax with professional massages and wellness treatments.',
         button: 'Book Now',
       link:'https://be.aiosell.com/book/6741980d7b'
@@ -54,7 +54,7 @@ function Services() {
       {
         icon: <FaDumbbell />,
         title: 'Gym',
-        hours: '5:00 AM - 10:00 PM',
+        hours: 'Service Hours : 5:00 AM - 10:00 PM',
         description: 'Fully equipped gym with personal trainers on request.',
         button: 'Book Now',
       link:'https://be.aiosell.com/book/6741980d7b'
@@ -108,7 +108,7 @@ function Services() {
       </div>
     </section>
         </div>
-         <FacilitiesTabs facilities={facilities}  /> 
+         <FacilitiesTabs facilities={facilities} from='false'  /> 
 
         
 

@@ -20,7 +20,7 @@ function Home() {
       name:"Urbn24",
       icon: <FaHotel />,
       title: 'Kaloor',
-      hours: '7:30 AM - 8:00 PM',
+      phone: `📞 +91 86895-4623`,
       description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias officia...',
       button: 'Book Now',
       link: 'https://be.aiosell.com/book/6741980d7b'
@@ -29,7 +29,7 @@ function Home() {
        name:"Urbn24",
       icon: <FaHotel />,
       title: 'Kottayam',
-      hours: '6:00 PM - 11:00 PM',
+      phone: `📞 +91 86895-4623`,
       description: 'Enjoy world-class cocktails and drinks in our luxurious lounge.',
       button: 'Book Now',
       link: 'https://be.aiosell.com/book/6741980d7b'
@@ -38,7 +38,7 @@ function Home() {
        name:"Urbn24",
       icon: <FaHotel />,
       title: 'Thrissur',
-      hours: '24/7',
+      phone: `📞 +91 86895-4623`,
       description: 'Complimentary airport and local transport service available anytime.',
       button: 'Book Now',
       link: 'https://be.aiosell.com/book/6741980d7b'
@@ -46,7 +46,7 @@ function Home() {
     { name:"Urbn24",
       icon: <FaHotel />,
       title: 'Vazhakala',
-      hours: '6:00 AM - 10:00 PM',
+      phone: `📞 +91 86895-4623`,
       description: 'Olympic-sized pool with temperature control and lounge service.',
       button: 'Book Now',
       link: 'https://be.aiosell.com/book/6741980d7b'
@@ -54,7 +54,7 @@ function Home() {
     { name:"Urbn24",
       icon: <FaHotel />,
       title: 'Karukappilly',
-      hours: '10:00 AM - 9:00 PM',
+      phone: `📞 +91 86895-4623`,
       description: 'Relax with professional massages and wellness treatments.',
       button: 'Book Now',
       link: 'https://be.aiosell.com/book/6741980d7b'
@@ -62,7 +62,7 @@ function Home() {
     { name:"Urbn24",
       icon: <FaHotel />,
       title: 'Trivandrum',
-      hours: '5:00 AM - 10:00 PM',
+      phone: `📞 +91 86895-4623`,
       description: 'Fully equipped gym with personal trainers on request.',
       button: 'Book Now',
       link: 'https://be.aiosell.com/book/6741980d7b'
