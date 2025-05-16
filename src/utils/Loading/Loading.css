@@ -1,4 +1,4 @@
-.loading {
+/* .loading {
   height: 100dvh;
   display: grid;
   place-content: center;
@@ -66,7 +66,7 @@
 .loader .logo svg {
   fill: grey;
   width: 100%;
-  animation: color-change 3s infinite ease-in-out;
+  animation: color-change 2s infinite ease-in-out;
 }
 
 @keyframes ripple {
@@ -93,5 +93,91 @@
   }
   100% {
     fill: grey;
+  }
+} */
+/* Demo Styles - It's all in the SVG */
+.loader {
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #000000;
+  font: 14px/21px Monaco, sans-serif;
+  color: #999;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #FF805F;
+}
+
+h4 {
+  margin: 0;
+  color: #666;
+}
+
+.scene {
+  width: 100%;
+  height: 100%;
+  perspective: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scene svg {
+  width: 240px;
+  height: 240px;
+}
+
+.dc-logo {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.dc-logo:hover svg {
+  transform-origin: 50% 50%;
+  animation: arrow-spin 2.5s 0s cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite;
+}
+
+.dc-logo:hover:before {
+  content: '\2764';
+  padding: 6px;
+  font: 10px/1 Monaco, sans-serif;
+  font-size: 10px;
+  color: #00fffe;
+  text-transform: uppercase;
+  position: absolute;
+  left: -70px;
+  top: -30px;
+  white-space: nowrap;
+  z-index: 20;
+  box-shadow: 0px 0px 4px #222;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.dc-logo:hover:after {
+  content: 'Digital Craft';
+  padding: 6px;
+  font: 10px/1 Monaco, sans-serif;
+  font-size: 10px;
+  color: #6E6F71;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0;
+  top: -30px;
+  white-space: nowrap;
+  z-index: 20;
+  box-shadow: 0px 0px 4px #222;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: none;
+}
+
+@keyframes arrow-spin {
+  50% {
+    transform: rotateY(360deg);
   }
 }

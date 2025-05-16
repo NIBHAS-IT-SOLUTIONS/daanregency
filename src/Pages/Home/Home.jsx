@@ -17,6 +17,7 @@ import Loading from '../../utils/Loading/Loading'
 function Home() {
   const facilities = [
     {
+      name:"Urbn24",
       icon: <FaHotel />,
       title: 'Kaloor',
       hours: '7:30 AM - 8:00 PM',
@@ -25,6 +26,7 @@ function Home() {
       link: 'https://be.aiosell.com/book/6741980d7b'
     },
     {
+       name:"Urbn24",
       icon: <FaHotel />,
       title: 'Kottayam',
       hours: '6:00 PM - 11:00 PM',
@@ -33,6 +35,7 @@ function Home() {
       link: 'https://be.aiosell.com/book/6741980d7b'
     },
     {
+       name:"Urbn24",
       icon: <FaHotel />,
       title: 'Thrissur',
       hours: '24/7',
@@ -40,7 +43,7 @@ function Home() {
       button: 'Book Now',
       link: 'https://be.aiosell.com/book/6741980d7b'
     },
-    {
+    { name:"Urbn24",
       icon: <FaHotel />,
       title: 'Vazhakala',
       hours: '6:00 AM - 10:00 PM',
@@ -48,7 +51,7 @@ function Home() {
       button: 'Book Now',
       link: 'https://be.aiosell.com/book/6741980d7b'
     },
-    {
+    { name:"Urbn24",
       icon: <FaHotel />,
       title: 'Karukappilly',
       hours: '10:00 AM - 9:00 PM',
@@ -56,7 +59,7 @@ function Home() {
       button: 'Book Now',
       link: 'https://be.aiosell.com/book/6741980d7b'
     },
-    {
+    { name:"Urbn24",
       icon: <FaHotel />,
       title: 'Trivandrum',
       hours: '5:00 AM - 10:00 PM',
@@ -97,9 +100,11 @@ function Home() {
         </div>
         <div>
           <section className="banner-section w-100 d-flex align-items-center">
+            <div className="overlay d-flex align-items-center">
             <div className="container text-center text-white">
-              <h1 className="banner-title">Choose from a wide range of <br /> <strong>luxury rooms</strong>.</h1>
+              <h1 className="banner-title">Choose from a wide range of <br /> <strong>luxury rooms</strong></h1>
               <button className="btn btn-warning banner-button mt-4">BOOK NOW</button>
+            </div>
             </div>
           </section>
         </div>

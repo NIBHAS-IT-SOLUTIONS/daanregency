@@ -1,24 +1,140 @@
-// Loading.jsx
-import React from 'react';
-import './Loading.css'; // Import the CSS for styling
-import logo from '../../Images/logo.svg'
 
+// import React from 'react';
+// import './Loading.css'; 
+// import logo from '../../Images/logo.svg'
+
+// const Loading = () => {
+//   return (
+//     <div className='loading'>
+//     <div class="loader">
+//   <div class = "box"> 
+//    <div class = "logo">
+//     <img src={logo} alt="Daan" width={110} srcset="" />
+//        </div>
+//   </div>
+//   <div class = "box"></div>
+//   <div class = "box"></div>
+//   <div class = "box"></div>
+//   <div class = "box"></div>
+// </div>
+// </div>
+//   );
+// };
+
+// export default Loading;
+import React from 'react';
+import './Loading.css'; // Import your CSS file
+import logo from '../../Images/logo.svg'
 const Loading = () => {
   return (
-    <div className='loading'>
-    <div class="loader">
-  <div class = "box"> 
-   <div class = "logo">
-    <img src={logo} alt="Daan" width={110} srcset="" />
-     {/* <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M100 34.2c-.4-2.6-3.3-4-5.3-5.3-3.6-2.4-7.1-4.7-10.7-7.1-8.5-5.7-17.1-11.4-25.6-17.1-2-1.3-4-2.7-6-4-1.4-1-3.3-1-4.8 0-5.7 3.8-11.5 7.7-17.2 11.5L5.2 29C3 30.4.1 31.8 0 34.8c-.1 3.3 0 6.7 0 10v16c0 2.9-.6 6.3 2.1 8.1 6.4 4.4 12.9 8.6 19.4 12.9 8 5.3 16 10.7 24 16 2.2 1.5 4.4 3.1 7.1 1.3 2.3-1.5 4.5-3 6.8-4.5 8.9-5.9 17.8-11.9 26.7-17.8l9.9-6.6c.6-.4 1.3-.8 1.9-1.3 1.4-1 2-2.4 2-4.1V37.3c.1-1.1.2-2.1.1-3.1 0-.1 0 .2 0 0zM54.3 12.3 88 34.8 73 44.9 54.3 32.4V12.3zm-8.6 0v20L27.1 44.8 12 34.8l33.7-22.5zM8.6 42.8 19.3 50 8.6 57.2V42.8zm37.1 44.9L12 65.2l15-10.1 18.6 12.5v20.1zM50 60.2 34.8 50 50 39.8 65.2 50 50 60.2zm4.3 27.5v-20l18.6-12.5 15 10.1-33.6 22.4zm37.1-30.5L80.7 50l10.8-7.2-.1 14.4z"></path></svg> */}
-   </div>
-  </div>
-  <div class = "box"></div>
-  <div class = "box"></div>
-  <div class = "box"></div>
-  <div class = "box"></div>
-</div>
-</div>
+    <div className='loader'>
+     
+      <div className="scene">
+        <svg
+          version="1.1"
+          id="dc-spinner"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="38"
+          height="38"
+          viewBox="0 0 38 38"
+          preserveAspectRatio="xMinYMin meet"
+        >
+          <text
+            x="14"
+            y="21"
+            fontFamily="Monaco"
+            fontSize="2px"
+            style={{ letterSpacing: '0.6' }}
+            fill="grey"
+          >
+            
+            LOADING
+            <animate
+              attributeName="opacity"
+              values="0;1;0"
+              dur="1.8s"
+              repeatCount="indefinite"
+            />
+          </text>
+
+          <path
+            fill="#373a42"
+            d="M20,35c-8.271,0-15-6.729-15-15S11.729,5,20,5s15,6.729,15,15S28.271,35,20,35z M20,5.203
+              C11.841,5.203,5.203,11.841,5.203,20c0,8.159,6.638,14.797,14.797,14.797S34.797,28.159,34.797,20
+              C34.797,11.841,28.159,5.203,20,5.203z"
+          />
+          <path
+            fill="#373a42"
+            d="M20,33.125c-7.237,0-13.125-5.888-13.125-13.125S12.763,6.875,20,6.875S33.125,12.763,33.125,20
+              S27.237,33.125,20,33.125z M20,7.078C12.875,7.078,7.078,12.875,7.078,20c0,7.125,5.797,12.922,12.922,12.922
+              S32.922,27.125,32.922,20C32.922,12.875,27.125,7.078,20,7.078z"
+          />
+
+          <path
+            fill="#2AA198"
+            stroke="#2AA198"
+            strokeWidth="0.6027"
+            strokeMiterlimit="10"
+            d="M5.203,20
+              c0-8.159,6.638-14.797,14.797-14.797V5C11.729,5,5,11.729,5,20s6.729,15,15,15v-0.203C11.841,34.797,5.203,28.159,5.203,20z"
+          >
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="0 20 20"
+              to="360 20 20"
+              calcMode="spline"
+              keySplines="0.4, 0, 0.2, 1"
+              keyTimes="0;1"
+              dur="2s"
+              repeatCount="indefinite"
+            />
+          </path>
+
+          <path
+            fill="#859900"
+            stroke="#859900"
+            strokeWidth="0.2027"
+            strokeMiterlimit="10"
+            d="M7.078,20
+              c0-7.125,5.797-12.922,12.922-12.922V6.875C12.763,6.875,6.875,12.763,6.875,20S12.763,33.125,20,33.125v-0.203
+              C12.875,32.922,7.078,27.125,7.078,20z"
+          >
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="0 20 20"
+              to="360 20 20"
+              dur="1.8s"
+              repeatCount="indefinite"
+            />
+          </path>
+        </svg>
+      </div>
+      <a className="dc-logo" href="http://digitalcraft.co" target="_blank" rel="noopener noreferrer">
+        <svg
+          version="1.1"
+          id="digital-craft"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="43.43px"
+          height="49.313px"
+          viewBox="0 0 43.43 49.313"
+          enableBackground="new 0 0 43.43 49.313"
+          xmlSpace="preserve"
+        >
+          <path
+            fill="rgba(0,0,0,0.4)"
+            d="M42.08,11.34L23.065,0.362c-0.836-0.482-1.865-0.482-2.701,0L1.35,11.34C0.515,11.822,0,12.714,0,13.679v21.956c0,0.965,0.515,1.856,1.35,2.339l19.014,10.978c0.418,0.241,0.884,0.362,1.35,0.362c0.466,0,0.933-0.121,1.35-0.362L42.08,37.973c0.836-0.482,1.35-1.374,1.35-2.339V13.679C43.43,12.714,42.915,11.822,42.08,11.34z"
+          />
+          <polygon fill="#6E6F71" points="29.127,21.537 14.302,21.537 7.594,28.243 12.535,33.189 21.715,24.009 30.892,33.189 35.836,28.243" />
+          <polygon fill="#00FFFE" points="34.529,17.905 25.492,17.905 21.715,14.126 17.937,17.905 8.9,17.905 8.9,20.078 34.529,20.078" />
+        </svg>
+      </a>
+    </div>
   );
 };
 

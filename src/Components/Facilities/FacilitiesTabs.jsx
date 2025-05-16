@@ -42,7 +42,7 @@ const FacilitiesTabs = ({facilities,from}) => {
   return (
     <div className="container py-5">
     {from &&
-      <h2 className='text-center display-3'> Explore Hotels </h2>
+      <h2 className='text-center display-3' style={{fontFamily:'Gitky Trial'}}> Explore Hotels </h2>
       }
         <br /><br />
       <div className="d-flex justify-content-center flex-wrap mb-4 facility-tabs">
@@ -52,8 +52,8 @@ const FacilitiesTabs = ({facilities,from}) => {
             className={`text-center mx-3 facility-tab ${activeIndex === idx ? 'active' : ''}`}
             onClick={() => setActiveIndex(idx)}
           >
-            <div className="icon">{item.icon}</div>
-            <div className="label">{item.title}</div>
+            <div className="icon" >{item.icon}</div>
+            <div className="label"style={{fontFamily:'Truculenta'}}>{item.title}</div>
           </div>
         ))}
       </div>
@@ -64,9 +64,9 @@ const FacilitiesTabs = ({facilities,from}) => {
           
         </div>
         <div className="col-md-6">
-          <h6 className="text-muted text-uppercase">World Class</h6>
-          <h3 className="mb-3">{facilities[activeIndex].title}</h3>
-          <p>{facilities[activeIndex].description}</p>
+          <h6 className="text-muted text-uppercase" style={{fontFamily:'BARTKEY',fontSize:'2rem'}}>{facilities[activeIndex].name}</h6>
+          <h3 className="mb-3" style={{fontFamily:'Truculenta'}}>{facilities[activeIndex].title}</h3>
+          <p style={{fontFamily:'Fathers'}}>{facilities[activeIndex].description}</p>
           <p><strong>Service Hours:</strong> {facilities[activeIndex].hours}</p>
           <a href={facilities[activeIndex].link}><button className="btn btn-lg btn-block text-white px-4" style={{backgroundColor:'#d39f44'}}>{facilities[activeIndex].button}</button></a>
         </div>
