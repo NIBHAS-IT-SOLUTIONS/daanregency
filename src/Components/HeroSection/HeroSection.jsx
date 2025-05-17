@@ -4,20 +4,24 @@ import { Carousel, Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 const HeroSection = () => {
   const Carouseldata = [
-    {
-      url:'https://i.postimg.cc/QxVrVMr3/Untitled-design-28.png',
-      HotelName:"Urbn 24 Daris",
-      description:"for the elite passionate about luxury & comfort"
-    },
+    
     {
       url:'https://i.postimg.cc/9QdVHnhR/Untitled-design-29.png',
-      HotelName:"Orchid residency",
-      description:"for the elite passionate about luxury & comfort"
+      HotelName:"Orchid Residency",
+      description:"Stay in Comfort. Leave with Memories."
     }, {
       url:'https://i.postimg.cc/QxVrVMr3/Untitled-design-28.png',
-      HotelName:"Urbn 24 Daris",
+      HotelName:"Orchid Residency",
+      description:"A Place for Every Family Moment."
+    },{
+      url:'https://i.postimg.cc/NFbVD9k8/ABI1677-HDR-Edit.jpg',
+      HotelName:"Daan Inn",
       description:"for the elite passionate about luxury & comfort"
-    },
+    },{
+      HotelName:"Urbn 24",
+      description:"In the Heart of the City, With You in Mind",
+      url:'https://i.postimg.cc/WpFc6SBt/Untitled-design-34.png'
+    }
 
   ];
 

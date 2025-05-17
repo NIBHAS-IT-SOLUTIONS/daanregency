@@ -15,48 +15,38 @@ function Services() {
         icon: <FaUtensils />,
         title: 'Restaurant',
         hours: ' 7:30 AM - 8:00 PM',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing .',
+        description: 'Our restaurant is easily accessible, with step-free entry, spacious seating, and facilities designed for guests of all abilities.',
         button: 'Book Now',
+        img:'https://i.postimg.cc/mZFySF8T/new-clean-luxury-restaurant-european-style-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turke.jpg',
       link:'https://be.aiosell.com/book/6741980d7b'
       },
-      {
-        icon: <FaGlassCheers />,
-        title: 'Bar',
-        hours: 'Service Hours : 6:00 PM - 11:00 PM',
-        description: 'Enjoy world-class cocktails and drinks in our luxurious lounge.',
-        button: 'Book Now',
-      link:'https://be.aiosell.com/book/6741980d7b'
-      },
+      
       {
         icon: <FaCar />,
         title: 'Pick-up',
         hours: 'Service Hours : 24/7',
         description: 'Complimentary airport and local transport service available anytime.',
         button: 'Book Now',
-      link:'https://be.aiosell.com/book/6741980d7b'
-      },
-      {
-        icon: <FaSwimmer />,
-        title: 'Swimming Pool',
-        hours: 'Service Hours : 6:00 AM - 10:00 PM',
-        description: 'Olympic-sized pool with temperature control and lounge service.',
-        button: 'Book Now',
+        img:'https://i.postimg.cc/zG3BnTFj/driver-dressed-elegant-costume.jpg',
       link:'https://be.aiosell.com/book/6741980d7b'
       },
       {
         icon: <FaSpa />,
-        title: 'Spa',
+        title: 'Laundry',
         hours: 'Service Hours : 10:00 AM - 9:00 PM',
-        description: 'Relax with professional massages and wellness treatments.',
+        description: 'Enjoy the convenience of our professional laundry service, available daily to keep your clothes fresh and ready for any occasion',
         button: 'Book Now',
+        img:'https://i.postimg.cc/J4fgqLb2/freshly-laundered-linens-stacked-neatly-table-bright-laundry-room.jpg',
       link:'https://be.aiosell.com/book/6741980d7b'
       },
       {
         icon: <FaDumbbell />,
-        title: 'Gym',
-        hours: 'Service Hours : 5:00 AM - 10:00 PM',
-        description: 'Fully equipped gym with personal trainers on request.',
+        title: 'Room Service',
+        hours: 'Service Hours : 24/7',
+        description: 'Delight in our 24/7 room service offering a variety of delicious meals and refreshments delivered right to your door for your comfort and convenience',
+        img:'https://i.postimg.cc/W31f3bvh/housekeeper-cleaning-hotel-room.jpg',
         button: 'Book Now',
+
       link:'https://be.aiosell.com/book/6741980d7b'
       }
     ];
@@ -98,6 +88,7 @@ function Services() {
         </div>
       </section>
       <div>
+        <h2 className='text-center mt-5 mb-5' style={{textAlign:'center',fontFamily:'Expletus Sans'}}>Rooms We Provide</h2>
         <Rooms/>
       </div>
       <div>

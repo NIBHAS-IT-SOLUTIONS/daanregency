@@ -61,8 +61,10 @@ const FacilitiesTabs = ({facilities,from}) => {
       </div>
 <br /><br />
       <div className="row align-items-center">
+        
         <div className="col-md-6 mb-4 mb-md-0">
-          <img src='https://i.postimg.cc/RVRWNxWF/Facade-Night-1.jpg' className="facility-img rounded bg-secondary"   />
+
+          <img src={facilities[activeIndex].img} className="facility-img rounded bg-secondary"   />
           
         </div>
         <div className="col-md-6">
@@ -75,8 +77,12 @@ const FacilitiesTabs = ({facilities,from}) => {
           
           <p> {facilities[activeIndex].hours}</p>
           
-          
-          <a href={facilities[activeIndex].link}><button className="btn btn-lg btn-block text-white px-4" style={{backgroundColor:'#d39f44'}}>{facilities[activeIndex].button}</button></a>
+          {from === true ? 
+ <a href={facilities[activeIndex].link}><button className="btn btn-lg btn-block text-white px-4" style={{backgroundColor:'#d39f44'}}>{facilities[activeIndex].button}</button></a>
+          :
+            <h3></h3>
+           }
+         
         </div>
       </div>
       <br /><br />

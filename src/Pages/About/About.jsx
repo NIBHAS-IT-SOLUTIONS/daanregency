@@ -12,37 +12,37 @@ export default function About() {
       icon: '📍',
       title: 'Accessible Location',
       description:
-        'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...',
+        'Conveniently located with easy access to public transport, major attractions, and essential services — making your stay smooth and hassle-free',
     },
     {
       icon: '⏰',
       title: 'Open 24/7',
       description:
-        'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...',
+        'Our dedicated team is available around the clock to assist with any needs you may have, ensuring a seamless and hassle-free stay.',
     },
     {
       icon: '📅',
       title: 'Reservation',
       description:
-        'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...',
+        'Our well-appointed rooms are designed with your comfort in mind, offering a peaceful and relaxing environment for both business and leisure travelers.',
     },
     {
       icon: '🧑',
       title: 'Friendly Staff',
       description:
-        'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...',
+        'We provide daily housekeeping to maintain the cleanliness and freshness of your room, ensuring a pleasant environment.',
     },
     {
       icon: '📡',
       title: 'Free Wifi',
       description:
-        'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...',
+        'Stay connected with fast and reliable internet access throughout the hotel, allowing you to work, stream, or stay in touch with loved ones.',
     },
     {
-      icon: '📍',
-      title: 'Accessible Location',
+      icon: '📷',
+      title: 'Security',
       description:
-        'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...',
+        'Your safety is our priority. Our hotel is equipped with 24/7 CCTV surveillance, secure keycard access, and trained staff to ensure a safe and comfortable stay.',
     },
   ];
 
@@ -136,7 +136,7 @@ export default function About() {
           <h2 className="fw-bold">Why Choose Us?</h2>
           <div className="green-underline mx-auto my-3"></div>
           <p className="text-muted">
-            Search millions of apartments, houses, and private office<br />
+           We ensure a memorable stay with impeccable service and modern amenities.<br />
             suites for rent with our exclusive hotels & apartments app.
           </p>
         </div>
@@ -172,7 +172,7 @@ export default function About() {
               All our hotels are fabulous, they are destinations unto themselves.
               We have crossed the globe to bring you only the best.
             </p>
-            <button className="btn btn-dark mt-3">Learn More</button>
+           
           </div>
 
           {/* Right Column */}

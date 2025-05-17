@@ -5,19 +5,19 @@ const hotels = [
   {
     name: 'Urban 24 Daris',
     description:
-      'Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac turpis egestas. Etiam euismod tempor leo, in suscipit urna condimentum sed. Vivamus augue enim, consectetur ac interdum a, pulvinar ac massa. Nullam malesuada congue.',
+      'Welcome to Urbn 24 daris, your cozy retreat in the vibrant heart of Kochi. Designed for travelers seeking comfort and simplicity, our hotel offers a tranquil space to unwind after a busy day in the city.',
     image: 'https://i.postimg.cc/dVR3rJvh/ABI6859.jpg'
   },
   {
     name: 'Premium Quality Rooms',
     description:
-      'Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac turpis egestas. Etiam euismod tempor leo, in suscipit urna condimentum sed.',
+      'At Urbn 24 daris, we focus exclusively on providing exceptional stay experiences. Whether you’re here for business or leisure, our well-maintained rooms, warm hospitality, and attention to detail ensure a peaceful and memorable visit.',
     image: 'https://i.postimg.cc/QdPDFPKF/ABI6748-Edit.jpg'
   },
   {
-    name: "D'Morvie",
+    name: "Our Vision",
     description:
-      'Pellentesque habitant morbi tristique senectus et netus ett mauada fames ac turpis egestas. Etiam euismod tempor leo, in suscipit urna condimentum sed.',
+      'our vision to provide exceptional hospitality and unforgettable experiences for every guest that walks through our doors',
     image: 'https://i.postimg.cc/mgySgcXk/ABI6877-Edit.jpg'
   }
 ];
