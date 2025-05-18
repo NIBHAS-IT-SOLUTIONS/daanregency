@@ -63,11 +63,11 @@ export default function About() {
         <Loading />
       ) : (
         <div>
-     
+     {/* backgroundImage: `url('https://i.postimg.cc/rw2PGwr5/gallery.png')` */}
        <section className="d-flex img-fluid flex-column justify-content-center align-items-center text-white text-center"
        style={{
                       height: '450px',
-                      backgroundImage: `url('https://i.postimg.cc/rw2PGwr5/gallery.png')`,
+                      backgroundImage: `url('../../Images/aboutus.png')`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center',
                       backgroundRepeat: 'no-repeat',

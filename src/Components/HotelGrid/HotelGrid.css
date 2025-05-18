@@ -5,3 +5,17 @@ img {
   /* height: auto; */
   
 }
+.bg-hotel {
+  /* background-color:black; */
+  background: url('../../Images/jdfuu9.jpg');
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 750px){
+.bg-hotel {
+    height: auto;}
+}

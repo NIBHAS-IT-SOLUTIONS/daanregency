@@ -28,9 +28,9 @@ export default function Offers() {
   };
 
   return (
-    <section className="we-offer-area text-center bg-gray">
+    <section className="we-offer-area text-center py-5 bg-gray">
       <div className="container">
-        <div className="site-heading text-center py-5">
+        <div className="site-heading text-center ">
           <h2>Special <span>Offers</span></h2>
         </div>
 
@@ -65,7 +65,7 @@ export default function Offers() {
         ) : (
           <div className="row">
             {offerItems.map((item, idx) => (
-              <div className="col-md-4 col-sm-6 mb-5" key={idx}>
+              <div className="col-md-4 col-sm-6 py-5" key={idx}>
                 <div className="item" onClick={() => handleCopy(item.code)}>
                   <div className="offer-percent">{item.percent}</div>
                   <br />
