@@ -122,7 +122,7 @@ function Home() {
           <CounterSection />
         </div>
         <div className='facilities'>
-          <FacilitiesTabs facilities={facilities} from='true' />
+          <FacilitiesTabs facilities={facilities} from='Home' />
         </div>
        
         {/* Other page content can go here */}

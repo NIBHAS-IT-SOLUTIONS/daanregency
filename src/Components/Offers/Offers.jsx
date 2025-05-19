@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "./Offers.css";
+import { Fade,JackInTheBox,Flip  } from "react-awesome-reveal";
+
 
 const offerItems = [
   { percent: "15% OFF", code: "DAAN15", title: "Discount Offer", desc: "Use this code to get 15% off on all Your Daan Regency Booking" },
@@ -28,13 +30,17 @@ export default function Offers() {
   };
 
   return (
+    
     <section className="we-offer-area text-center py-5 bg-gray">
+      {/* <Fade direction="up" duration={1000} > */}
       <div className="container">
         <div className="site-heading text-center ">
           <h2>Special <span>Offers</span></h2>
         </div>
 
         {isMobile ? (
+          // 
+          
           <Swiper
             modules={[Autoplay]}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -43,6 +49,7 @@ export default function Offers() {
           >
             {offerItems.map((item, idx) => (
               <SwiperSlide key={idx}>
+                <Fade direction="up" duration={1000} >
                 <div className="item" onClick={() => handleCopy(item.code)}>
                   <div className="offer-percent">{item.percent}</div>
                   <br />
@@ -58,14 +65,17 @@ export default function Offers() {
                       <div className="copied-msg">Code Copied!</div>
                     )}
                   </div>
-                </div>
+                </div></Fade>
               </SwiperSlide>
             ))}
           </Swiper>
+          
+          // </Fade>
         ) : (
           <div className="row">
             {offerItems.map((item, idx) => (
               <div className="col-md-4 col-sm-6 py-5" key={idx}>
+                 <Fade delay={300} direction="up" duration={1000} >
                 <div className="item" onClick={() => handleCopy(item.code)}>
                   <div className="offer-percent">{item.percent}</div>
                   <br />
@@ -82,11 +92,14 @@ export default function Offers() {
                     )}
                   </div>
                 </div>
+                </Fade>
               </div>
             ))}
           </div>
         )}
-      </div>
+      </div> 
+      {/* </Fade> */}
     </section>
+   
   );
 }

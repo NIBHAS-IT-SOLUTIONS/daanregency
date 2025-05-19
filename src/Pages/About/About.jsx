@@ -4,6 +4,8 @@ import './About.css'
 import aboutimage from '../../Images/slide2.jpg'
 import Footer from '../../Components/Footer/Footer';
 import Loading from '../../utils/Loading/Loading';
+import { Bounce,Slide,Fade  } from 'react-awesome-reveal';
+
 
                 
 export default function About() {
@@ -66,8 +68,8 @@ export default function About() {
      {/* backgroundImage: `url('https://i.postimg.cc/rw2PGwr5/gallery.png')` */}
        <section className="d-flex img-fluid flex-column justify-content-center align-items-center text-white text-center"
        style={{
-                      height: '450px',
-                      backgroundImage: `url('../../Images/aboutus.png')`,
+                      height: '650px',
+                      backgroundImage: `url('https://i.postimg.cc/sgw9bzbm/aboutus.png')`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center',
                       backgroundRepeat: 'no-repeat',
@@ -147,9 +149,11 @@ export default function About() {
         <div className="row">
           {features.map((feature, index) => (
             <div className="col-md-4 mb-4 text-center" key={index}>
+              <Fade direction='up' delay={200} duration={1500} >
               <div className="feature-icon mb-3">{feature.icon}</div>
               <h5>{feature.title}</h5>
               <p>{feature.description}</p>
+              </Fade >
             </div>
           ))}
         </div>

@@ -5,6 +5,16 @@
   width: 100%;
   z-index: 1050; /* higher than the hero section */
 }
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 /* Default navbar when at top */
 .navbar-top {
   background-color: rgba(255, 255, 255, 0); /* transparent */

@@ -14,11 +14,12 @@ ul {
   padding: 0;
   list-style: none;
 }
+
 /* Section background */
 .bg-gray {
     /* background-color:white; */
     background: url('../../Images/jdfuu9.jpg');
-    height: 90vh;
+    height: 70vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

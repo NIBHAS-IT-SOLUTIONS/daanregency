@@ -45,7 +45,11 @@ const HeroSection = () => {
                     <Form.Label>Hotel</Form.Label>
                       <Form.Select>
                         <option>Urbn 24</option>
-                        <option>2</option>
+                        <option>Yaad Inn</option>
+                        <option>Temple Inn</option>
+                        <option>Daan Residency</option>
+                        <option>Daan Inn</option>
+                        <option>Orchid Residency</option>
                       </Form.Select>
                     </Col>
                     <Col xs={6} md={6} lg={2}>
@@ -58,10 +62,7 @@ const HeroSection = () => {
                     </Col>
                     <Col xs={6} md={6} lg={2}>
                       <Form.Label>Room</Form.Label>
-                      <Form.Select>
-                        <option>1</option>
-                        <option>2</option>
-                      </Form.Select>
+                      <Form.Control type="number" defaultValue={1} min={1} />
                     </Col>
                     
                     <Col xs={6} lg={3} className="d-grid align-items-end">

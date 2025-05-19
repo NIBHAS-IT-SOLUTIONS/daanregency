@@ -68,8 +68,8 @@ function Services() {
     {/* backgroundImage: `url('https://i.postimg.cc/rw2PGwr5/gallery.png')`, */}
        <section className="d-flex flex-column justify-content-center bg-dark align-items-center text-white text-center"
        style={{
-                      height: '450px',
-                      backgroundImage: `url('../../Images/facilities.jpg')`,
+                      height: '650px',
+                      backgroundImage: `url('https://i.postimg.cc/FH4Nw50Y/facilities.jpg')`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center center',
                       backgroundRepeat: 'no-repeat',

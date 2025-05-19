@@ -11,7 +11,20 @@
     transition: all 0.3s ease;
     padding: 10px;
   }
-  
+  .bg-fac {
+  /* background-color:black; */
+  background: url('../../Images/jdfuu9.jpg');
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 750px){
+.bg-fac {
+    height: auto;}
+}
   .facility-tabs .facility-tab.active {
     color: #fa5b0f;
     border-bottom: 2px solid #fa5b0f;
@@ -42,7 +55,7 @@
       }
     }
   .services-section {
-    background-color: #ffffff;
+    background-color: #ffffff00;
   }
   
   .service-box {

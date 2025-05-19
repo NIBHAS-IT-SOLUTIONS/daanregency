@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react';
 import './FacilitiesTabs.css';
 import { FaUtensils, FaGlassCheers, FaCar, FaSwimmer, FaSpa, FaDumbbell } from 'react-icons/fa';
 import { FaKey, FaHeadset, FaWifi } from 'react-icons/fa';
-
+import { Hinge,Bounce,Zoom   } from 'react-awesome-reveal';
 
 const services = [
   {
@@ -35,13 +35,14 @@ const FacilitiesTabs = ({facilities,from}) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % facilities.length);
-    }, 3000); // Change tab every 4 seconds
+    }, 4000); // Change tab every 4 seconds
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, [facilities.length]);
   return (
+    <div className="bg-fac">
     <div className="container py-5">
-    {from  === true ?
+    {from  === 'Home' ?
       <h2 className='text-center display-3' style={{fontFamily:'Gitky Trial'}}> Explore Hotels </h2>
       :
       <h2 className='text-center display-3' style={{fontFamily:'Gitky Trial'}}> </h2>
@@ -77,7 +78,7 @@ const FacilitiesTabs = ({facilities,from}) => {
           
           <p> {facilities[activeIndex].hours}</p>
           
-          {from === true ? 
+          {from === 'Home' ? 
  <a href={facilities[activeIndex].link}><button className="btn btn-lg btn-block text-white px-4" style={{backgroundColor:'#d39f44'}}>{facilities[activeIndex].button}</button></a>
           :
             <h3></h3>
@@ -91,6 +92,7 @@ const FacilitiesTabs = ({facilities,from}) => {
         <div className="row text-center">
           {services.map((service, idx) => (
             <div key={idx} className="col-12 col-md-6 col-lg-3 mb-4">
+              <Zoom delay={500} duration={1000} >
               <div className="service-box p-3">
                 <div className="icon-circle mb-3">
                   <span className="icon">{service.icon}</span>
@@ -99,11 +101,13 @@ const FacilitiesTabs = ({facilities,from}) => {
                 <p className="text-muted">{service.description}</p>
                 
               </div>
+              </Zoom  >
             </div>
           ))}
         </div>
       </div>
     </section>
+    </div>
     </div>
   );
 };

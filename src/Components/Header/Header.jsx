@@ -13,7 +13,7 @@ const Header = () => {
     setMenuOpen((prev) => !prev);
   };
 
-  // Close menu on outside click
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuOpen && navRef.current && !navRef.current.contains(event.target)) {
@@ -25,7 +25,7 @@ const Header = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [menuOpen]);
 
-  // Scroll logic
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', onScroll);
@@ -36,7 +36,7 @@ const Header = () => {
     <div className="header-wrapper" ref={navRef}>
       <Navbar
         expand="lg"
-        expanded={menuOpen} // controls menu visibility
+        expanded={menuOpen}
         variant={scrolled || menuOpen ? 'light' : 'dark'}
         className={`main-nav ${
           menuOpen ? 'navbar-open' : scrolled ? 'navbar-scrolled' : 'navbar-top'
