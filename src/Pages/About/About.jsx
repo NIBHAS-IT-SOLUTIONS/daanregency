@@ -159,10 +159,10 @@ export default function About() {
         </div>
       </div>
     </section>
-    <section className="banner-section d-flex align-items-center">
+    <section className="banner-section d-flex align-items-center banneroverlay">
       <div className="container text-center text-white">
         <h1 className="banner-title">Choose from a wide range of <br /> <strong>luxury rooms</strong>.</h1>
-        <button className="btn btn-light banner-button mt-4">BOOK NOW</button>
+        <button className="btn btn-warning banner-button mt-4">BOOK NOW</button>
       </div>
     </section>
     <section className="progress-info-section w-100 px-5 py-5">

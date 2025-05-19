@@ -72,6 +72,14 @@
     color: white;
     
   }
+  .banneroverlay {
+    background-color: rgba(0, 0, 0, 0.947); /* dark overlay */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   .banner-title {
     font-size: 2.5rem;
@@ -81,8 +89,9 @@
   .banner-button {
     padding: 10px 25px;
     font-weight: 500;
-    border-radius: 0;
+    border-radius: 10;
     letter-spacing: 1px;
+ 
   }  
   .progress-info-section {
     width: 100%;

@@ -29,10 +29,11 @@ const services = [
 
 const FacilitiesTabs = ({facilities,from}) => {
   
-  
+  let classn=''
   
   const [activeIndex, setActiveIndex] = useState(0);
   useEffect(() => {
+   
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % facilities.length);
     }, 4000); // Change tab every 4 seconds
@@ -40,7 +41,8 @@ const FacilitiesTabs = ({facilities,from}) => {
     return () => clearInterval(interval); // Cleanup on unmount
   }, [facilities.length]);
   return (
-    <div className="bg-fac">
+    
+    <div className='bg-fac'>
     <div className="container py-5">
     {from  === 'Home' ?
       <h2 className='text-center display-3' style={{fontFamily:'Gitky Trial'}}> Explore Hotels </h2>

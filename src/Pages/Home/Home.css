@@ -19,13 +19,13 @@
   
     background: url('https://i.postimg.cc/9QdVHnhR/Untitled-design-29.png') no-repeat center center;
     background-size: cover;
-    height: 30vh;
+    height: 40vh;
     position: relative;
     color: rgb(255, 255, 255);
     
   }
-    .overlay {
-    background-color: rgba(0, 0, 0, 0.308); /* dark overlay */
+    .banneroverlay {
+    background-color: rgba(0, 0, 0, 0.947); /* dark overlay */
     height: 100%;
     width: 100%;
     display: flex;
@@ -43,6 +43,8 @@
     font-weight: 500;
     border-radius: 10px;
     letter-spacing: 1px;
+   
+    color: white;
   }  
   @media (max-width: 575px) {
     .bookingbar {

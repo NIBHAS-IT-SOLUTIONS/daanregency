@@ -28,7 +28,12 @@ ul {
 
 @media (max-width: 750px){
   .bg-gray {
-      height: 60vh;}
+      height: 65vh;}
+}
+@media (min-width: 750px) and (max-width: 1400px) {
+  .bg-gray {
+    height: 90vh;
+  }
 }
 
 /* Headings */

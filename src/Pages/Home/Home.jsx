@@ -105,11 +105,11 @@ function Home() {
           <Offers />
         </div>
         <div>
-          <section className="banner-section w-100 d-flex align-items-center">
+          <section className="banner-section w-100 d-flex align-items-center banneroverlay">
             <div className="overlay d-flex align-items-center">
             <div className="container text-center text-white">
               <h1 className="banner-title">Choose from a wide range of <br /> <strong>luxury rooms</strong></h1>
-              <button className="btn btn-warning banner-button mt-4">BOOK NOW</button>
+              <button className="btn btn-warning btn-lg banner-button mt-4">BOOK NOW</button>
             </div>
             </div>
           </section>

@@ -49,7 +49,7 @@ export default function Offers() {
           >
             {offerItems.map((item, idx) => (
               <SwiperSlide key={idx}>
-                <Fade direction="up" duration={1000} >
+                <Fade direction="up" delay={500} duration={1000} >
                 <div className="item" onClick={() => handleCopy(item.code)}>
                   <div className="offer-percent">{item.percent}</div>
                   <br />
