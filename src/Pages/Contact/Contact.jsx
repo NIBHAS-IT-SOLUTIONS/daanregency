@@ -77,7 +77,7 @@ function Contact() {
             <div className="col-md-6 mb-4">
               <iframe
                 title="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.9832694069946!2d76.21244627586563!3d10.343222567033129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1091f25fbad3855%3A0x404bb0de71499fe7!2sNibhas%20HRD%20Solutions%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1745909996424!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31383.651540624396!2d76.216731!3d10.504097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7efdcc752f73b%3A0x732e8a94fcde4976!2sDaan%20Regency!5e0!3m2!1sen!2sus!4v1748248633575!5m2!1sen!2sus"
                 style={{ width: '100%', height: '450px', border: 0 }}
                 allowFullScreen
                 loading="lazy"
@@ -86,34 +86,33 @@ function Contact() {
 
             {/* Contact Info and Form */}
             <div className="col-md-6">
-              <h5>Our Address</h5>
-              <p>
-                Always welcome to our Premises
-              </p>
+             
+             
               <ul className="list-unstyled mb-4">
-                <li><strong>📍</strong> Daan Regency and Resorts, Kochi Trivandrum,Thrissur</li>
-                <li><strong>📞</strong> +91 98765 43210</li>
-                {/* <li><strong>📧</strong> info@yoursite.com</li> */}
-                
+                <li><strong>📍</strong> Beevas Tower 1st Street <br />Green Park Kannamkulangara Road <br />  Thrissur, Kerala 680007</li>
+                <li><strong>📞</strong> + 91 90 48 288 688</li>
+                <li><strong>📞</strong> + 91 62 38 251 537</li>
+                <li><strong>📧</strong> info@daanregency.com</li>
+              
               </ul>
 
               <form ref={form} onSubmit={sendEmail}>
                 <div className="row g-2">
                   <div className="col-md-6">
-                    <input type="text" id="from_name"
+                    <input type="text" id="from_name" required
                    name="from_name" className="form-control" placeholder="Name" />
                   </div>
                   <div className="col-md-6">
                     <input type="email" 
-                     id="email"
+                     id="email" required
                      name="frommail"className="form-control" placeholder="Email" />
                   </div>
                   <div className="col-md-12">
-                    <input type="phone"  name="phone" className="form-control" placeholder="Phone" />
+                    <input type="phone" required  name="phone" className="form-control" placeholder="Phone" />
                   </div>
                 </div>
                 <div className="mt-3">
-                  <textarea rows="4" name="message" className="form-control" placeholder="Message"></textarea>
+                  <textarea rows="4" required name="message" className="form-control" placeholder="Message"></textarea>
                 </div>
                 <div className="mt-3">
                   <button type="submit" className="btn btn-dark w-100">Send Message</button>

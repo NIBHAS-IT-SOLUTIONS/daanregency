@@ -64,9 +64,9 @@ const Header = () => {
               ))}
             </Nav>
             <div className="d-flex flex-column flex-md-row align-items-center gap-2 mt-3 mt-md-0">
-              <Button variant="outline-warning" className="fw-bold">
+              <Link to={'https://be.aiosell.com/book/6741980d7b'}><Button variant="outline-warning" className="fw-bold">
                 BOOK NOW
-              </Button>
+              </Button></Link>
             </div>
           </Navbar.Collapse>
         </Container>

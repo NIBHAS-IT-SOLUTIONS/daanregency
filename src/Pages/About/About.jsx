@@ -139,7 +139,7 @@ export default function About() {
           <div className="green-underline mx-auto my-3"></div>
           <p className="text-muted">
            We ensure a memorable stay with impeccable service and modern amenities.<br />
-            suites for rent with our exclusive hotels & apartments app.
+            
           </p>
         </div>
       </div>
@@ -162,7 +162,7 @@ export default function About() {
     <section className="banner-section d-flex align-items-center banneroverlay">
       <div className="container text-center text-white">
         <h1 className="banner-title">Choose from a wide range of <br /> <strong>luxury rooms</strong>.</h1>
-        <button className="btn btn-warning banner-button mt-4">BOOK NOW</button>
+        <a href="https://be.aiosell.com/book/6741980d7b"><button className="btn btn-warning banner-button mt-4">BOOK NOW</button></a>
       </div>
     </section>
     <section className="progress-info-section w-100 px-5 py-5">

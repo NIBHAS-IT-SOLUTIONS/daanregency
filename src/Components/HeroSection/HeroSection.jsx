@@ -1,6 +1,7 @@
 import React from 'react';
 import './HeroSection.css';
 import { Carousel, Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   const Carouseldata = [
@@ -66,7 +67,7 @@ const HeroSection = () => {
                     </Col>
                     
                     <Col xs={6} lg={3} className="d-grid align-items-end">
-                      <Button variant="warning lg" className="fw-bold">SEARCH ROOM</Button>
+                      <Button variant="warning lg" className="fw-bold"><Link className='text-black text-decoration-none' to={'https://be.aiosell.com/book/6741980d7b'}>SEARCH ROOM</Link></Button>
                     </Col>
                   </Row>
                 </Form>

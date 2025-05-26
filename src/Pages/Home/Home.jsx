@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../../Components/Header/Header'
 import HeroSection from '../../Components/HeroSection/HeroSection'
-import BookingBar from '../../Components/BookingBar/Bookingbar'
+
 import './Home.css'
 import FacilitiesTabs from '../../Components/Facilities/FacilitiesTabs'
 import HotelGrid from '../../Components/HotelGrid/HotelGrid'
@@ -10,9 +10,10 @@ import Footer from '../../Components/Footer/Footer'
 import CounterSection from '../../Components/CountingSection/CounterSection'
 import { FaUtensils, FaHotel, FaGlassCheers, FaCar, FaSwimmer, FaSpa, FaDumbbell } from 'react-icons/fa';
 import { FaKey, FaHeadset, FaWifi } from 'react-icons/fa';
-import HighlightBar from '../../Components/HighlightBar/HighlightBar'
+
 import Offers from '../../Components/Offers/Offers'
 import Loading from '../../utils/Loading/Loading'
+import { Link } from 'react-router-dom'
 
 function Home() {
   const facilities = [
@@ -86,7 +87,7 @@ function Home() {
   return (
     <div >
 
-      {/* <HighlightBar/> */}
+     
       <Header />
  {loading ? (
         <Loading />
@@ -109,7 +110,7 @@ function Home() {
             <div className="overlay d-flex align-items-center">
             <div className="container text-center text-white">
               <h1 className="banner-title">Choose from a wide range of <br /> <strong>luxury rooms</strong></h1>
-              <button className="btn btn-warning btn-lg banner-button mt-4">BOOK NOW</button>
+              <a href="https://be.aiosell.com/book/6741980d7b"><button className="btn btn-warning btn-lg banner-button mt-4">BOOK NOW</button></a>
             </div>
             </div>
           </section>
