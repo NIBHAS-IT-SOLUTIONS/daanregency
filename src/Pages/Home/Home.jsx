@@ -14,6 +14,7 @@ import { FaKey, FaHeadset, FaWifi } from 'react-icons/fa';
 import Offers from '../../Components/Offers/Offers'
 import Loading from '../../utils/Loading/Loading'
 import { Link } from 'react-router-dom'
+import HighlightBar from '../../Components/HighlightBar/HighlightBar'
 
 function Home() {
   const facilities = [
@@ -21,7 +22,7 @@ function Home() {
       name:"Urbn24",
       icon: <FaHotel />,
       title: 'Kaloor',
-      phone: `📞 +91 86895-4623`,
+      phone: `📞 +91 90482-88688`,
       description: 'Enjoy world-class rooms and facilities in our luxurious lounge.',
       button: 'Book Now',
       img:'https://i.postimg.cc/xTbWrC5R/ABI6958-Edit.jpg',
@@ -31,7 +32,7 @@ function Home() {
        name:"Orchid Regency",
       icon: <FaHotel />,
       title: 'Kottayam',
-      phone: `📞 +91 86895-4623`,
+      phone: `📞 +91 90482-88688`,
       description: 'Your premier destination in the heart of Kottayam town!',
       button: 'Book Now',
       img:'https://i.postimg.cc/PfLLnBBC/Copy-of-Facade-5.jpg',
@@ -41,7 +42,7 @@ function Home() {
        name:"Yaad Inn",
       icon: <FaHotel />,
       title: 'Kaloor',
-      phone: `📞 +91 86895-4623`,
+      phone: `📞 +91 90482-88688`,
       description: 'affordable place to stay while supporting your loved ones ',
       button: 'Book Now',
       img:'https://i.postimg.cc/FHw6TQ36/Untitled-design-32.png',
@@ -50,7 +51,7 @@ function Home() {
     { name:"Daan Temple Inn",
       icon: <FaHotel />,
       title: 'Vazhakala',
-      phone: `📞 +91 86895-4623`,
+      phone: `📞 +91 90482-88688`,
       description: 'Experience unparalleled comfort and convenience with our exceptional range of services and amenities',
       button: 'Book Now',
       img:'https://i.postimg.cc/tJmZFkwh/DAAN-TEMPLE-INN005.jpg',
@@ -59,7 +60,7 @@ function Home() {
     { name:"Daan Residency",
       icon: <FaHotel />,
       title: 'Karukappilly',
-      phone: `📞 +91 86895-4623`,
+      phone: `📞 +91 90482-88688`,
       description: ' perfect blend of elegant design and ultimate relaxation in every aspect of your stay.',
       button: 'Book Now',
       img:'https://i.postimg.cc/SNJzm0YV/ABI0912-Edit.jpg',
@@ -68,7 +69,7 @@ function Home() {
     { name:"Urbn24",
       icon: <FaHotel />,
       title: 'Trivandrum',
-      phone: `📞 +91 86895-4623`,
+      phone: `📞 +91 90482-88688`,
       description: 'We ensure a memorable stay with impeccable service and modern amenities.',
       button: 'Book Now',
       img:'https://i.postimg.cc/NFbVD9k8/ABI1677-HDR-Edit.jpg',
@@ -87,15 +88,17 @@ function Home() {
   return (
     <div >
 
-     
+     <HighlightBar/>
       <Header />
  {loading ? (
         <Loading />
       ) : (
       <div className="home-container">
+        
         <div className='hero'>
           <HeroSection />
         </div>
+
 
         {/* <div className='bookingbar '>
            <BookingBar />

@@ -1,0 +1,36 @@
+.header-wrapper1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1100; /* higher than the hero section */
+}
+.highlighttop-bar{
+    text-align: center;
+    top:0;
+    background-color:#b48a53;
+    color:white;
+    position: sticky;
+    width: 100vw;
+  
+ 
+}
+.highlighttop-bar-scrolled{
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    top:0;
+    background-color:#b48a53;
+    color:whitesmoke;
+  z-index: 1100;
+
+}
+.highlight{
+
+    margin: 0;
+}
+@media (min-width: 990px){
+.highlight{
+    margin-left: 2vw;
+}
+}

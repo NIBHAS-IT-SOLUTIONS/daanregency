@@ -5,7 +5,7 @@ function Rooms() {
     const rooms = [
         {
           title: 'Suite Room',
-          price: 2999,
+          price: 1500,
           guests: 4,
           bed: '1 King Bed',
           rating: 5,
@@ -13,7 +13,7 @@ function Rooms() {
         },
         {
           title: 'Premium Room',
-          price: 3999,
+          price: 1750,
           guests: 6,
           bed: '2 Single Beds',
           rating: 4,
@@ -21,8 +21,8 @@ function Rooms() {
         },
         {
           title: 'Super delux Room',
-          price: 6000,
-          oldPrice: 4999,
+          price: 1950,
+          oldPrice: 2150,
           discount: '20%',
           guests: 6,
           bed: '2 King Beds',
@@ -94,7 +94,7 @@ function Rooms() {
                   )}
                   <strong>₹{room.price}</strong>
                 </p>
-                <button className="btn btn-warning text-white">Book Now</button>
+                <a href="https://be.aiosell.com/book/6741980d7b"><button className="btn btn-warning text-white">Book Now</button></a>
               </div>
             </div>
           </div>
