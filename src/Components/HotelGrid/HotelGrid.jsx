@@ -23,6 +23,11 @@ const hotels = [
 ];
 
 const HotelGrid = () => {
+   const handleClick = () => {
+   
+      window.open('https://urbn24.in/', '_blank');
+    
+  };
   return (
     <div className='bg-hotel'>
     <div className="container py-5 ">
@@ -41,7 +46,7 @@ const HotelGrid = () => {
               <div className="col-md-6">
                 <h5>{hotel.name}</h5>
                 <p>{hotel.description}</p>
-                <button className="btn btn-dark">Book Now</button>
+                <button className="btn btn-dark" onClick={handleClick}>Book Now</button>
               </div>
             </>
           ) : (
@@ -52,7 +57,7 @@ const HotelGrid = () => {
               <div className="col-md-6 order-md-1">
                 <h5>{hotel.name}</h5>
                 <p>{hotel.description}</p>
-                <button className="btn btn-dark">Book Now</button>
+                <button className="btn btn-dark" onClick={handleClick}>Book Now</button>
               </div>
             </>
           )}
