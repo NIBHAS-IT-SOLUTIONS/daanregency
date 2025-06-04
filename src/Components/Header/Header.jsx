@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Header.css';
 import { Container, Navbar, Nav, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import logo from '../../Images/logo.png';
+
+import newlogo from '../../Images/daanlogo.png';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -43,8 +44,8 @@ const Header = () => {
         }`}
       >
         <Container>
-          <Navbar.Brand as={Link} to="/" className="fw-bold text-gold fs-3">
-            <img src={logo} width={100} alt="" srcSet="" />Daan.
+          <Navbar.Brand as={Link} to="/" className="fw-bold text-gold fs-3 p-3">
+            <img src={newlogo} width={100} alt="" srcSet="" />
           </Navbar.Brand>
           <Navbar.Toggle onClick={handleToggle} />
           <Navbar.Collapse>
