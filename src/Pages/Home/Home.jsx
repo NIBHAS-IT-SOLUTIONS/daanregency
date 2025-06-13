@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Header from '../../Components/Header/Header'
+
 import HeroSection from '../../Components/HeroSection/HeroSection'
 
 import './Home.css'
@@ -14,7 +15,11 @@ import { FaKey, FaHeadset, FaWifi } from 'react-icons/fa';
 import Offers from '../../Components/Offers/Offers'
 import Loading from '../../utils/Loading/Loading'
 import { Link } from 'react-router-dom'
-import HighlightBar from '../../Components/HighlightBar/HighlightBar'
+
+// import Header from '../../Components/new/Header'
+import TopBar from '../../Components/new/TopBar'
+import BookingForm from '../../Components/new/BookingForm'
+// import HeroSection from '../../Components/new/HeroSection'
 
 function Home() {
   const facilities = [
@@ -115,8 +120,13 @@ function Home() {
   return (
     <div >
 
-     <HighlightBar/>
-      <Header />
+     {/* <HighlightBar/> */}
+      {/* <TopBar/> */}
+      <Header/>
+     
+      {/* <BookingForm/> */}
+
+      
  {loading ? (
         <Loading />
       ) : (

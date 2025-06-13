@@ -1,0 +1,97 @@
+.hero-section {
+  display: flex;
+  height: 90vh;
+  position: relative;
+  background: #ffffff00;
+}
+
+.hero-left {
+  flex: 1;
+  padding: 6rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: inherit;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.hero-left .miami {
+  color: #e74c3c;
+}
+
+.price {
+  color: #e74c3c;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.subtext {
+  color: #555;
+  font-size: 15px;
+}
+
+.hero-right {
+  flex: 2;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fade-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.19));
+}
+@media (max-width: 950px) {
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    flex-direction: unset; /* Remove column-reverse */
+  }
+
+  .hero-left {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4); /* Optional: darken for better readability */
+    color: #fff;
+    justify-content: center;
+  }
+
+  .hero-left h1,
+  .hero-left .price,
+  .hero-left .subtext {
+    color: #fff;
+  }
+
+  .hero-right {
+    height: 100vh;
+  }
+
+  .hero-right img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .fade-overlay {
+    display: none; /* Remove overlay if not needed */
+  }
+}
+

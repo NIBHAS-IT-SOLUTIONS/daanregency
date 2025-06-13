@@ -90,7 +90,7 @@ const today = new Date().toISOString().split('T')[0];
                   <span className="text-warning"> Check Availability.</span>
                 </p>
 <br /><br /><br />
-                <Form className="room-search p-4 rounded bg-dark text-white">
+                <Form className="room-search p-4 rounded text-white">
                   <Row className="g-2">
                   <Col xs={12} md={6} lg={3}>
                     <Form.Label>Hotel</Form.Label>
