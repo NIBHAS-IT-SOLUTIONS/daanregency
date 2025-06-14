@@ -9,7 +9,7 @@ import './CounterSection.css';
 
 const counters = [
   { id: 1, icon: <FaPeace size={40} />, value: 1200, label: 'Happy Clients' },
-  { id: 2, icon: <FaBullseye size={40} />, value: 7, label: 'branches' },
+  { id: 2, icon: <FaBullseye size={40} />, value: 9, label: 'branches' },
   { id: 3, icon: <FaClock size={40} />, value: 16800, label: 'Working Hours' },
   { id: 4, icon: <FaRocket size={40} />, value: 100, label: 'Satisfaction', suffix: '%' },
 ];

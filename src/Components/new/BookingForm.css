@@ -1,0 +1,26 @@
+.booking-form {
+  background: rgba(255, 255, 255, 0.603);
+  display: flex;
+  gap: 10px;
+  padding: 0px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  color: black;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 20px rgba(207, 163, 18, 0.1);
+  flex-wrap: wrap;
+}
+.booking-form input,
+.booking-form select,
+.booking-form button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.booking-form button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}

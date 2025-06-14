@@ -96,7 +96,7 @@ function Services() {
         <section className="banner-section w-100 d-flex align-items-center ">
       <div className="container text-center text-white">
         <h1 className="banner-title">Choose from a wide range of <br /> <strong>luxury rooms</strong>.</h1>
-        <button className="btn btn-warning banner-button mt-4">BOOK NOW</button>
+        <a href="https://be.aiosell.com/book/6741980d7b"><button className="btn btn-warning banner-button mt-4">BOOK NOW</button></a>
       </div>
     </section>
         </div>
