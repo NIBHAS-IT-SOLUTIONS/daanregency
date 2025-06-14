@@ -14,6 +14,8 @@ import HighlightBar from '../../Components/HighlightBar/HighlightBar'
 import Offers from '../../Components/Offers/Offers'
 import Loading from '../../utils/Loading/Loading'
 
+
+
 function Home() {
   const facilities = [
     {
@@ -86,13 +88,14 @@ function Home() {
   return (
     <div >
 
-      {/* <HighlightBar/> */}
+      
       <Header />
  {loading ? (
         <Loading />
       ) : (
       <div className="home-container">
-        <div className='hero'>
+        
+        <div className='hero'><HighlightBar/>
           <HeroSection />
         </div>
 
