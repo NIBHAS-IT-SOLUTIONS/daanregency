@@ -1,0 +1,58 @@
+.rooms-carousel-wrapper {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+ 
+  background-color: rgb(0, 255, 255);
+}
+
+.rooms-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.room-card {
+  height: 250px;
+  flex-shrink: 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.room-card .overlay {
+    border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.226);
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Background styles (replace with actual images or colors) */
+.bg-card-1 {
+  background-image: url('../../Images/slide2.jpg'); /* Replace with actual paths */
+}
+
+.bg-card-2 {
+  background-image: url('../../Images/slide3.jpg');
+}
+
+.bg-card-3 {
+  background-image: url('../../Images/slide2.jpg');
+}
+
+.bg-card-4 {
+  background-image: url('../../Images/slide1.jpg');
+}
+
+/* Optional: fallback solid colors if images not available */
+.bg-card-1, .bg-card-2, .bg-card-3, .bg-card-4 {
+  background-color: #333;
+}

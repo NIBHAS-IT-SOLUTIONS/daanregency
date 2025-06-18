@@ -19,6 +19,7 @@ import { Link } from 'react-router-dom'
 // import Header from '../../Components/new/Header'
 import TopBar from '../../Components/new/TopBar'
 import BookingForm from '../../Components/new/BookingForm'
+import LuxuryRoomsSection from '../../Components/booknowgrid/LuxuryRoomsSection'
 // import HeroSection from '../../Components/new/HeroSection'
 
 function Home() {
@@ -146,14 +147,15 @@ function Home() {
           <Offers />
         </div>
         <div>
-          <section className="banner-section w-100 d-flex align-items-center banneroverlay">
+          {/* <section className="banner-section w-100 d-flex align-items-center banneroverlay">
             <div className="overlay d-flex align-items-center">
             <div className="container text-center text-white">
               <h1 className="banner-title">Choose from a wide range of <br /> <strong>luxury rooms</strong></h1>
               <a href="https://be.aiosell.com/book/6741980d7b"><button className="btn btn-warning btn-lg banner-button mt-4">BOOK NOW</button></a>
             </div>
             </div>
-          </section>
+          </section> */}
+          <LuxuryRoomsSection/>
         </div>
        <div className='facilities'>
           <FacilitiesTabs facilities={facilities} from='Home' />

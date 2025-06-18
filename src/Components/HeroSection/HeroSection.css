@@ -3,15 +3,20 @@
 @import url('https://fonts.cdnfonts.com/css/Vibrant-Display');
 
 .carousel-bg {
-    height: 100vh;
-    background-size: contain;
+  margin: 40px 30px;
+ 
+  background-color: transparent;
+  border-radius: 50px;
+    height: 92vh;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
   }
   
   .overlay {
-    background-color: rgba(0, 0, 0, 0.371); 
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.365); 
     height: 100%;
     width: 100%;
     display: flex;
@@ -31,8 +36,10 @@
     font-style: italic;
     font-family: 'Expletus Sans','Bebas Neue', sans-serif;
   }
-  @media (max-width: 750px) {
+  @media (max-width: 970px) {
     .hero-title {
+
+      margin-top: -10vh;
       font-size: 3rem;
       font-weight: bold;
       font-family: 'Georgia ','Bebas Neue', sans-serif;
@@ -42,12 +49,39 @@
       margin-top: 1rem;
       color: #f1f1f1;
       font-family: 'Bebas Neue', sans-serif;
-    }}
+    }
+  .carousel-bg {
+    margin: 12vh 10px ;
+  
+    background-color: black;
+    border-radius: 10px;
+    height: 80vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .overlay {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0); 
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .room-search {
+   margin-top: 10vh;
+    background-color: #00000054;
+    max-width: 100%;
+    align-items: center;
+  }
+  
+  }
   
 
   
   .room-search {
-    background-color: #f1f1f154;
+    background-color: #fdf9f954;
     max-width: 100%;
     align-items: center;
   }

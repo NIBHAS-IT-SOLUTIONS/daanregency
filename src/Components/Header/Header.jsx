@@ -36,9 +36,9 @@ const Header = () => {
   return (
     <div className="header-wrapper" ref={navRef}>
       <div className="topile-bar">
-    <span>📞 +1-634-567-34</span>
-    <span>We're in Trivandrum , Kottayam , Kochi , Thrissur , Guruvayoor</span>
-    <span>✉️ info@hotale.co</span>
+    <span className='phonee'>📞 +1-634-567-34</span>
+    <span className='places'>We're in Trivandrum , Kottayam , Kochi , Thrissur , Guruvayoor</span>
+    <span className='phonee'>✉️ info@hotale.co</span>
   </div>
       <Navbar
         expand="lg"

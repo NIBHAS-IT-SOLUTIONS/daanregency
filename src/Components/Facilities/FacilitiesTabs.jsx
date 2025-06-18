@@ -25,6 +25,15 @@ const services = [
     title: 'Free Wifi',
     description: 'All rooms enabled with free wifi',
   },
+   {
+    icon: '🏟️',
+    title: 'Free Wifi',
+    description: 'All rooms enabled with free wifi',
+  }, {
+    icon: '🍽️',
+    title: 'Restaurant',
+    description: 'All rooms enabled with free wifi',
+  },
 ];
 
 const FacilitiesTabs = ({facilities,from}) => {
@@ -93,7 +102,7 @@ const FacilitiesTabs = ({facilities,from}) => {
       <div className="container">
         <div className="row text-center">
           {services.map((service, idx) => (
-            <div key={idx} className="col-12 col-md-6 col-lg-3 mb-4">
+            <div key={idx} className="col-12 col-md-6 col-lg-2 mb-4">
               <Zoom delay={500} duration={1000} >
               <div className="service-box p-3">
                 <div className="icon-circle mb-3">
