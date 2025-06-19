@@ -5,6 +5,7 @@ import aboutimage from '../../Images/slide2.jpg'
 import Footer from '../../Components/Footer/Footer';
 import Loading from '../../utils/Loading/Loading';
 import { Bounce,Slide,Fade  } from 'react-awesome-reveal';
+import LuxuryRoomsSection from '../../Components/booknowgrid/LuxuryRoomsSection';
 
 
                 
@@ -159,12 +160,13 @@ export default function About() {
         </div>
       </div>
     </section>
-    <section className="banner-section d-flex align-items-center banneroverlay">
+    {/* <section className="banner-section d-flex align-items-center banneroverlay">
       <div className="container text-center text-white">
         <h1 className="banner-title">Choose from a wide range of <br /> <strong>luxury rooms</strong>.</h1>
         <a href="https://be.aiosell.com/book/6741980d7b"><button className="btn btn-warning banner-button mt-4">BOOK NOW</button></a>
       </div>
-    </section>
+    </section> */}
+    <LuxuryRoomsSection/>
     <section className="progress-info-section w-100 px-5 py-5">
       <div className="container-fluid px-5 py-5">
         <div className="row align-items-center">
@@ -183,41 +185,41 @@ export default function About() {
           <div className="col-md-6">
             <div className="mb-3">
               <div className="d-flex justify-content-between">
-                <span>Slim & Wellness</span>
-                <span>90%</span>
+                <span>Neet & Hygenic Room</span>
+                <span>95%</span>
               </div>
               <div className="progress">
-                <div className="progress-bar bg-dark" style={{ width: '90%' }}></div>
+                <div className="progress-bar bg-dark" style={{ width: '95%' }}></div>
               </div>
             </div>
 
             <div className="mb-3">
               <div className="d-flex justify-content-between">
-                <span>Deluxe Services</span>
-                <span>80%</span>
+                <span>Well Appointed Staff</span>
+                <span>98%</span>
               </div>
               <div className="progress">
-                <div className="progress-bar bg-dark" style={{ width: '80%' }}></div>
+                <div className="progress-bar bg-dark" style={{ width: '98%' }}></div>
               </div>
             </div>
 
             <div className="mb-3">
               <div className="d-flex justify-content-between">
-                <span>Celebrations & Events</span>
-                <span>90%</span>
+                <span>Room Ambience</span>
+                <span>93%</span>
               </div>
               <div className="progress">
-                <div className="progress-bar bg-dark" style={{ width: '90%' }}></div>
+                <div className="progress-bar bg-dark" style={{ width: '96%' }}></div>
               </div>
             </div>
 
             <div>
               <div className="d-flex justify-content-between">
-                <span>Gastronomy</span>
-                <span>80%</span>
+                <span>Restaurant & Banquet</span>
+                <span>95%</span>
               </div>
               <div className="progress">
-                <div className="progress-bar bg-dark" style={{ width: '80%' }}></div>
+                <div className="progress-bar bg-dark" style={{ width: '95%' }}></div>
               </div>
             </div>
           </div>

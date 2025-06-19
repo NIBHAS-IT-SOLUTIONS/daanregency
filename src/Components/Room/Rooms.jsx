@@ -4,57 +4,47 @@ import './Rooms.css'
 function Rooms() {
     const rooms = [
         {
-          title: 'Suite Room',
-          price: 1500,
-          guests: 4,
-          bed: '1 King Bed',
+          title: 'Business Suite ',
+          price: 5000,
+         
           rating: 5,
           image: 'https://i.postimg.cc/Wbp924sr/Suite-5.jpg',
         },
         {
           title: 'Premium Room',
-          price: 1750,
-          guests: 6,
-          bed: '2 Single Beds',
-          rating: 4,
+          price: 2800,
+          
+          rating: 5,
           image: 'https://i.postimg.cc/7Zfm2QGZ/Premium-12.jpg',
         },
         {
-          title: 'Super delux Room',
+          title: 'Super deluxe Room',
           price: 1950,
-          oldPrice: 2150,
-          discount: '20%',
-          guests: 6,
-          bed: '2 King Beds',
+          
           rating: 5,
           image: 'https://i.postimg.cc/Gt8tzJcX/Super-Deluxe-20.jpg',
         },
-        // {
-        //   title: 'Grand Suite Room',
-        //   price: 80,
-        //   guests: 4,
-        //   bed: '1 King Bed',
-        //   rating: 5,
-        //   image: 'grand-suite.jpg',
-        // },
-        // {
-        //   title: 'Junior Suite Room',
-        //   price: 69,
-        //   oldPrice: 81.18,
-        //   discount: '15%',
-        //   guests: 3,
-        //   bed: '1 Double Bed',
-        //   rating: 5,
-        //   image: 'junior-suite.jpg',
-        // },
-        // {
-        //   title: 'Standard Room',
-        //   price: 80,
-        //   guests: 4,
-        //   bed: '1 Double Bed',
-        //   rating: 4,
-        //   image: 'standard-room.jpg',
-        // },
+        {
+          title: 'Standard Room',
+          price: 1000,
+         
+          rating: 5,
+          image: 'https://amalaarcade.com/wp-content/uploads/2024/08/DSC3965-HDR-copy-1-2048x1366.jpg',
+        },
+        {
+          title: 'Deluxe Room',
+          price: 1400,
+         
+          rating: 5,
+          image: 'https://iili.io/FoWWbUl.jpg',
+        },
+        {
+          title: 'Family Room',
+          price: 1800,
+          
+          rating: 5,
+          image: 'https://amalaarcade.com/wp-content/uploads/2024/08/DSC3920-copy-scaled.jpg',
+        },
       ];
   return (
     <div className="container py-4">
@@ -79,9 +69,7 @@ function Rooms() {
                 <p className="card-text mb-1">
                   <i className="bi bi-bed"></i> {room.bed}
                 </p>
-                <p className="card-text mb-1">
-                  <i className="bi bi-people-fill"></i> {room.guests} Guests
-                </p>
+                
                 <p className="card-text">
                   {'★'.repeat(room.rating)}{'☆'.repeat(5 - room.rating)} 1 Review
                 </p>

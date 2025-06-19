@@ -84,11 +84,15 @@
   color: #b48a53 !important;
 }
 @import url('https://fonts.cdnfonts.com/css/holly-bale?styles=169413');
+
+ @import url('https://fonts.cdnfonts.com/css/varuna');
+
+                
 .nav-link-custom {
   position: relative;
   color: #ffffff;
-  font-family: 'Holly Bale', sans-serif;
-  font-size: 2rem;
+  font-family: 'VARUNA', sans-serif;                                                
+  font-size: 1rem;
                                                 
                                                 
 }

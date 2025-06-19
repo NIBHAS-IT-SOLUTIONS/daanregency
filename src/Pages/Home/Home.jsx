@@ -16,14 +16,21 @@ import Offers from '../../Components/Offers/Offers'
 import Loading from '../../utils/Loading/Loading'
 import { Link } from 'react-router-dom'
 
-// import Header from '../../Components/new/Header'
-import TopBar from '../../Components/new/TopBar'
-import BookingForm from '../../Components/new/BookingForm'
+
 import LuxuryRoomsSection from '../../Components/booknowgrid/LuxuryRoomsSection'
-// import HeroSection from '../../Components/new/HeroSection'
+
 
 function Home() {
   const facilities = [
+{ name:"Daan Orchid residency",
+      icon: <FaHotel />,
+      title: 'Kottayam ',
+      phone: `📞 +91 96338-33141`, 
+      description: 'Unwind in style, where every detail is designed for delight.',
+      button: 'Book Now',
+      img:'https://i.postimg.cc/PfLLnBBC/Copy-of-Facade-5.jpg',
+      link: 'https://daanorchidresidency.com/'
+    },
     {
       name:"Daan Regency",
       icon: <FaHotel />,
@@ -34,17 +41,7 @@ function Home() {
       img:'https://i.postimg.cc/Fzq4JZ70/5d0fda4f-9bd7-4138-acaa-9ad4507754571.jpg',
       link: 'https://daanregency.com/'
     },
-    {
-       name:"Amala Arcade thrissur",
-      icon: <FaHotel />,
-      title: 'Thrissur',
-      phone: `📞 +91 73063-93739`,
-      description: 'Your premier destination in the heart of Kottayam town!',
-      button: 'Book Now',
-      img:'https://i.postimg.cc/x8Bwd14R/DSC4163-HDR-copy-scaled.jpg',
-      link: 'https://amalaarcade.com/'
-    },
-    {
+{
        name:"Daan Temple inn",
       icon: <FaHotel />,
       title: 'GURUVAYUR ',
@@ -53,7 +50,17 @@ function Home() {
       button: 'Book Now',
       img:'https://i.postimg.cc/LsC2p22y/DAAN-TEMPLE-INN007-scaled.jpg',
       link: 'https://daantempleinn.com/'
+    },{ name:"Urbn24",
+      icon: <FaHotel />,
+      title: 'Kalamassery ',
+      phone: `📞 +91 85903-43798`,
+      description: 'We ensure a memorable stay with impeccable service and modern amenities.',
+      button: 'Book Now',
+      img:'https://i.postimg.cc/0Qsd9Rnw/ABI6958-Edit-1-1024x766.webp',
+      link: 'https://urbn24.in/'
     },
+    
+    
     { name:"Daan Inn",
       icon: <FaHotel />,
       title: 'Vazhakala',
@@ -72,15 +79,7 @@ function Home() {
       img:'https://i.postimg.cc/QxJLDhqp/ABI1197-Edit-copy-1024x683.webp',
       link: 'https://daanresidency.in/'
     },
-    { name:"Urbn24",
-      icon: <FaHotel />,
-      title: 'Kalamassery ',
-      phone: `📞 +91 85903-43798`,
-      description: 'We ensure a memorable stay with impeccable service and modern amenities.',
-      button: 'Book Now',
-      img:'https://i.postimg.cc/0Qsd9Rnw/ABI6958-Edit-1-1024x766.webp',
-      link: 'https://urbn24.in/'
-    },
+    
     { name:"Daan South Park",
       icon: <FaHotel />,
       title: 'Ernakulam',
@@ -89,16 +88,17 @@ function Home() {
       button: 'Book Now',
       img:'https://i.postimg.cc/FzghwcRS/1639455211.jpg',
       link: 'https://www.booking.com/hotel/in/daan-south-park.en-gb.html?aid=357028&label=bin859jc-1DCAsobEIPZGFhbi1zb3V0aC1wYXJrSDNYA2hsiAEBmAEJuAEXyAEM2AED6AEB-AEDiAIBqAIDuALqjPXBBsACAdICJDI4NDAxYWU1LWFjNDktNDMyMi05OTc2LWZkOTdmY2YxNzNkYtgCBOACAQ&sid=e8aa6d68ffa841b312fa52746b65c647&dist=0&keep_landing=1&sb_price_type=total&type=total&'
-    },
-    { name:"Daan Orchid residency",
+    },{
+       name:"Amala Arcade thrissur",
       icon: <FaHotel />,
-      title: 'Kottayam ',
-      phone: `📞 +91 96338-33141`, 
-      description: 'Unwind in style, where every detail is designed for delight.',
+      title: 'Thrissur',
+      phone: `📞 +91 73063-93739`,
+      description: 'Your premier destination in the heart of Kottayam town!',
       button: 'Book Now',
-      img:'https://i.postimg.cc/PfLLnBBC/Copy-of-Facade-5.jpg',
-      link: 'https://daanorchidresidency.com/'
+      img:'https://i.postimg.cc/x8Bwd14R/DSC4163-HDR-copy-scaled.jpg',
+      link: 'https://amalaarcade.com/'
     },
+    
     { name:"Meridian By Daan",
       icon: <FaHotel />,
       title: 'Trivandrum',

@@ -27,12 +27,12 @@ const services = [
   },
    {
     icon: '🏟️',
-    title: 'Free Wifi',
-    description: 'All rooms enabled with free wifi',
+    title: 'Banquet Halls',
+    description: 'Host your events with ease',
   }, {
     icon: '🍽️',
     title: 'Restaurant',
-    description: 'All rooms enabled with free wifi',
+    description: 'delightfull dining experience for you',
   },
 ];
 

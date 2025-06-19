@@ -16,14 +16,14 @@ function Footer() {
         </div>
 
         <div>
-          <a href="https://www.facebook.com/daanregency/" className="text-white me-4">
+          <a href="https://www.facebook.com/profile.php?id=61557428725502&ref=_ig_profile_ac" className="text-white me-4">
             <i className="fab fa-facebook-f"></i>
           </a>
          
-          <a href="https://www.instagram.com/daanregency/" className="text-white me-4">
+          <a href="https://www.instagram.com/daanorchid/" className="text-white me-4">
             <i className="fab fa-instagram"></i>
           </a>
-          <a href="#" className="text-white me-4">
+          <a href="https://www.youtube.com/watch?v=gz0OYhgjIto" className="text-white me-4">
             <i className="fab fa-youtube"></i>
           </a>
           <a href="#" className="text-white me-4">
@@ -37,7 +37,7 @@ function Footer() {
         <div className="container text-center text-md-start mt-5">
           <div className="row mt-3">
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold">Daan Regency and Hotels</h6>
+              <h6 className="text-uppercase fw-bold"> DAAN HOSPITALITY SOLUTIONS PRIVATE LIMITED</h6>
               <hr
                 className="mb-4 mt-0 d-inline-block mx-auto"
                 style={{ width: "60px", backgroundColor: "#7c4dff", height: "2px" }}
@@ -103,10 +103,11 @@ function Footer() {
                 className="mb-4 mt-0 d-inline-block mx-auto"
                 style={{ width: "60px", backgroundColor: "#7c4dff", height: "2px" }}
               />
-              <p><i className="fas fa-home mr-3"></i> Beevas Tower 1st Street <br />Green Park Kannamkulangara Road <br />  Thrissur, Kerala 680007 </p>
-              <p><i className="fas fa-envelope mr-3"></i>	info@daanregency.com</p>
-              <p><i className="fas fa-phone mr-3"></i> + 91 90 48 288 688</p>
-              <p><i className="fas fa-phone mr-3"></i> + 91 62 38 251 537</p>
+              <p><i className="fas fa-home mr-1"></i> DAAN HOSPITALITY SOLUTIONS PRIVATE LIMITED <br />
+                Orchid Residency <br />Pulimoodu Rd, Pulimoodu Jn, <br />  Kottayam 686001</p>
+              <p><i className="fas fa-envelope mr-3"></i>	info@daanorchidresidency.com</p>
+              <p><i className="fas fa-phone mr-3"></i> + 91 96 33 833 141</p>
+             
 
             </div>
           </div>

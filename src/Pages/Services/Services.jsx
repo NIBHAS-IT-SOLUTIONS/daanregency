@@ -9,12 +9,13 @@ import CounterSection from '../../Components/CountingSection/CounterSection'
 import Rooms from '../../Components/Room/Rooms'
 import { useState } from 'react'
 import Loading from '../../utils/Loading/Loading'
+import LuxuryRoomsSection from '../../Components/booknowgrid/LuxuryRoomsSection'
 function Services() {
    const facilities = [
       {
         icon: <FaUtensils />,
         title: 'Restaurant',
-        hours: ' 7:30 AM - 8:00 PM',
+        hours: ' 7:30 AM - 10:00 PM',
         description: 'Our restaurant is easily accessible, with step-free entry, spacious seating, and facilities designed for guests of all abilities.',
         button: 'Book Now',
         img:'https://i.postimg.cc/mZFySF8T/new-clean-luxury-restaurant-european-style-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turke.jpg',
@@ -23,7 +24,7 @@ function Services() {
       
       {
         icon: <FaCar />,
-        title: 'Pick-up',
+        title: 'Travel Assistance',
         hours: 'Service Hours : 24/7',
         description: 'Complimentary airport and local transport service available anytime.',
         button: 'Book Now',
@@ -69,7 +70,7 @@ function Services() {
        <section className="d-flex flex-column justify-content-center bg-dark align-items-center text-white text-center"
        style={{
                       height: '650px',
-                      backgroundImage: `url('https://i.postimg.cc/FH4Nw50Y/facilities.jpg')`,
+                      backgroundImage: `url('https://iili.io/FoXX6SR.png')`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center center',
                       backgroundRepeat: 'no-repeat',
@@ -93,12 +94,13 @@ function Services() {
         <Rooms/>
       </div>
       <div>
-        <section className="banner-section w-100 d-flex align-items-center ">
+        {/* <section className="banner-section w-100 d-flex align-items-center ">
       <div className="container text-center text-white">
         <h1 className="banner-title">Choose from a wide range of <br /> <strong>luxury rooms</strong>.</h1>
         <a href="https://be.aiosell.com/book/6741980d7b"><button className="btn btn-warning banner-button mt-4">BOOK NOW</button></a>
       </div>
-    </section>
+    </section> */}
+    <LuxuryRoomsSection/>
         </div>
          <FacilitiesTabs facilities={facilities} from='false'  /> 
 

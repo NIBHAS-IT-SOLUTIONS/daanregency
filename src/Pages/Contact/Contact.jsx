@@ -75,12 +75,17 @@ function Contact() {
           <div className="row">
             {/* Google Map */}
             <div className="col-md-6 mb-4">
-              <iframe
+              {/* <iframe
                 title="map"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31383.651540624396!2d76.216731!3d10.504097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7efdcc752f73b%3A0x732e8a94fcde4976!2sDaan%20Regency!5e0!3m2!1sen!2sus!4v1748248633575!5m2!1sen!2sus"
                 style={{ width: '100%', height: '450px', border: 0 }}
                 allowFullScreen
                 loading="lazy"
+              ></iframe> */}
+              <iframe 
+               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d503561.17790876474!2d76.521084!3d9.589088!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b062ba0c213d92d%3A0x604a1e1cabeca535!2sDaan%20Orchid%20Residency!5e0!3m2!1sen!2sus!4v1750316098317!5m2!1sen!2sus&z=18"  
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              style={{ width: '100%', height: '450px', border: 0 }}
               ></iframe>
             </div>
 
@@ -89,10 +94,11 @@ function Contact() {
              
              
               <ul className="list-unstyled mb-4">
-                <li><strong>📍</strong> Beevas Tower 1st Street <br />Green Park Kannamkulangara Road <br />  Thrissur, Kerala 680007</li>
-                <li><strong>📞</strong> + 91 90 48 288 688</li>
-                <li><strong>📞</strong> + 91 62 38 251 537</li>
-                <li><strong>📧</strong> info@daanregency.com</li>
+                <li><strong>📍</strong> DAAN HOSPITALITY SOLUTIONS PVT LTD <br />
+                Orchid Residency <br />Pulimoodu Rd, Pulimoodu Jn, <br />  Kottayam 686001</li>
+                <li><strong>📞</strong> + 91 96 33 833 141</li>
+                {/* <li><strong>📞</strong> + 91 62 38 251 537</li> */}
+                <li><strong>📧</strong> info@daanorchidresidency.com</li>
               
               </ul>
 

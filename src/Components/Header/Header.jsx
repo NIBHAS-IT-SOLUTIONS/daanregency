@@ -28,7 +28,7 @@ const Header = () => {
 
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 200);
+    const onScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
@@ -36,9 +36,9 @@ const Header = () => {
   return (
     <div className="header-wrapper" ref={navRef}>
       <div className="topile-bar">
-    <span className='phonee'>📞 +1-634-567-34</span>
+    <span className='phonee'>📞 +91-9633-833-141</span>
     <span className='places'>We're in Trivandrum , Kottayam , Kochi , Thrissur , Guruvayoor</span>
-    <span className='phonee'>✉️ info@hotale.co</span>
+    <span className='phonee'>✉️  info@daanorchidresidency.com</span>
   </div>
       <Navbar
         expand="lg"
