@@ -46,7 +46,7 @@ function Footer() {
                 Elegant, cooling and modern cosy room,stay near to city without city hassles. 
                 There are all the little extras that make a stay at daan regency so special.Are you on business? Or private trip? 
                 It doesn’t matter. 
-                We want you to feel completely at ease with your stay in daan regency.
+                We want you to feel completely at ease with your stay in daan group.
               </p>
             </div>
 
@@ -120,7 +120,7 @@ function Footer() {
       >
         © 2025 Copyright: All rights reserved &nbsp;
         <a className="text-white text-decoration-none" href="https://daanregency.com/">
-          Daan Regency
+          DAAN HOSPITALITY SOLUTIONS PRIVATE LIMITED
         </a>
         <br />
         Our IT Partner &nbsp;

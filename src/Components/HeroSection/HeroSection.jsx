@@ -2,18 +2,25 @@ import React, { useState } from 'react';
 import './HeroSection.css';
 import { Carousel, Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import carouselimg from '../../Images/daan carousel.png'
 
 const HeroSection = () => {
   const Carouseldata = [
-    
+    {
+      url:'https://iili.io/Fxa9EL7.png',
+      main:true
+      
+    },
     {
       url:'https://i.postimg.cc/9QdVHnhR/Untitled-design-29.png',
       HotelName:"Daan Orchid Residency",
-      description:"Stay in Comfort. Leave with Memories."
+      description:"Stay in Comfort. Leave with Memories.",
+       main:false
     }, {
       url:'https://i.postimg.cc/QxVrVMr3/Untitled-design-28.png',
       HotelName:"Orchid Residency",
-      description:"A Place for Every Family Moment."
+      description:"A Place for Every Family Moment.",
+       main:false
     }
     // ,{
     //   url:'https://i.postimg.cc/NFbVD9k8/ABI1677-HDR-Edit.jpg',
@@ -23,41 +30,45 @@ const HeroSection = () => {
     ,{
       HotelName:"Urbn 24",
       description:"In the Heart of the City, With You in Mind",
-      url:'https://i.postimg.cc/WpFc6SBt/Untitled-design-34.png'
+      url:'https://i.postimg.cc/WpFc6SBt/Untitled-design-34.png',
+       main:false
     }
 
   ];
   const [link,setLink]=useState('')
   const[selct,setSelct]=useState('')
 const facilities = [
+{ name:"Daan Orchid residency Kottayam",
+
+      link: 'https://be.aiosell.com/book/daan-orchid-residency'
+    },
     {
       name:"Daan Regency Thrissur",
       link: 'https://daanregency.com/'
+    },
+{
+      name:"Daan Temple Inn GURUVAYUR",
+      link: 'https://be.aiosell.com/book/6891adaf23'
+    },{ name:"Urbn24 Kalamassery",
+      link: 'https://urbn24.in/'
+    },
+ { name:"Daan Inn Vazhakala",
+      link: 'https://be.aiosell.com/book/6741980d7b'
+    },
+    
+    
+   
+    { name:"Daan Residency Elamakkara",
+      link: 'https://daanresidency.in/'
     },
     {
       name:"Amala Arcade Thrissur",
       link: 'https://be.aiosell.com/book/amala-arcade'
     },
-    {
-      name:"Daan Temple Inn GURUVAYUR",
-      link: 'https://be.aiosell.com/book/6891adaf23'
-    },
-    { name:"Daan Inn Vazhakala",
-      link: 'https://be.aiosell.com/book/6741980d7b'
-    },
-    { name:"Daan Residency Elamakkara",
-      link: 'https://daanresidency.in/'
-    },
-    { name:"Urbn24 Kalamassery",
-      link: 'https://urbn24.in/'
-    },
     { name:"Daan South Park Ernakulam South",
       link: 'https://www.booking.com/hotel/in/daan-south-park.en-gb.html?aid=357028&label=bin859jc-1DCAsobEIPZGFhbi1zb3V0aC1wYXJrSDNYA2hsiAEBmAEJuAEXyAEM2AED6AEB-AEDiAIBqAIDuALqjPXBBsACAdICJDI4NDAxYWU1LWFjNDktNDMyMi05OTc2LWZkOTdmY2YxNzNkYtgCBOACAQ&sid=e8aa6d68ffa841b312fa52746b65c647&dist=0&keep_landing=1&sb_price_type=total&type=total&'
     },
-    { name:"Daan Orchid residency Kottayam",
-
-      link: 'https://be.aiosell.com/book/daan-orchid-residency'
-    },
+    
     { name:"Meridian By Daan Trivandrum",
       link: 'https://www.booking.com/hotel/in/meridian-by-daan.en-gb.html?aid=357028&label=bin859jc-1DCAsobEIQbWVyaWRpYW4tYnktZGFhbkgzWANobIgBAZgBCbgBF8gBDNgBA-gBAfgBA4gCAagCA7gCzpX1wQbAAgHSAiRiY2JiYmUzMy1jOGJmLTRhMzUtODJmYy00ZjQ3Y2E1OWU2NDHYAgTgAgE&sid=e8aa6d68ffa841b312fa52746b65c647&dist=0&keep_landing=1&sb_price_type=total&type=total&'
     }
@@ -86,10 +97,21 @@ const today = new Date().toISOString().split('T')[0];
             <div className="overlay d-flex align-items-center">
               <Container className="text-center text-white mt-5 py-5" >
               <br />
+              {
+                data.main === true ? 
+                <>
+                <br />
+                <br />
+                <br />
+                <br />
+                </> :
+                <>
+                </>
+              }
                 <h1 className="hero-title">{data.HotelName}</h1>
                 <p className="hero-subtitle">
                   {data.description}
-                  <span className="text-warning"> Check Availability.</span>
+                  {/* <span className="text-warning"> Check Availability.</span> */}
                 </p>
 <br /><br /><br />
                 <Form className="room-search p-4 rounded text-white">

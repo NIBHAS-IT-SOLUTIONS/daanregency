@@ -53,7 +53,7 @@ function Services() {
     ];
   const [loading, setLoading] = useState(true);
        useEffect(() => {
-          document.title = 'Daan - Facilities';
+          document.title = 'Daan Hotels - Facilities';
      
          setTimeout(() => {
            setLoading(false); // Hide loader after 2 seconds

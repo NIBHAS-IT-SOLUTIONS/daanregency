@@ -1,5 +1,5 @@
 .rooms-carousel-wrapper {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   position: relative;
  
@@ -21,13 +21,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+ 
 }
 
 .room-card .overlay {
     border-radius: 0px;
-  background-color: rgba(0, 0, 0, 0.226);
+  background-color: rgba(0, 0, 0, 0.472);
   padding: 20px;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   color: #fff;
   display: flex;
@@ -37,19 +38,19 @@
 
 /* Background styles (replace with actual images or colors) */
 .bg-card-1 {
-  background-image: url('../../Images/slide2.jpg'); /* Replace with actual paths */
+  background-image: url('https://s3.ap-south-1.amazonaws.com/buzz.beconf.test/daan-orchid-residency/super-deluxe-Premium%2014.jpg'); /* Replace with actual paths */
 }
 
 .bg-card-2 {
-  background-image: url('../../Images/slide3.jpg');
+  background-image: url('https://s3.ap-south-1.amazonaws.com/buzz.beconf.test/6891adaf23/studio-ac-493-DAAN%20TEMPLE%20INN043.jpg');
 }
 
 .bg-card-3 {
-  background-image: url('../../Images/slide2.jpg');
+  background-image: url('https://s3.ap-south-1.amazonaws.com/buzz.beconf.test/6741980d7b/premium-family-room-87-family%20room%202.jpg');
 }
 
 .bg-card-4 {
-  background-image: url('../../Images/slide1.jpg');
+  background-image: url('https://s3.ap-south-1.amazonaws.com/buzz.beconf.test/amala-arcade/deluxe-double-553-_DSC3986-HDR%20copy%20(1).jpg');
 }
 
 /* Optional: fallback solid colors if images not available */

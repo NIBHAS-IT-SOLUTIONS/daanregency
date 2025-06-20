@@ -4,9 +4,9 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const FloatingContactIcons = () => {
-  const phoneNumber = '919048288688'; // Add your number here
+  const phoneNumber = '919633833141'; // Add your number here
   const message = 'Hello! I would like to connect with you.';
-  const email = 'info@daanregency.com'; // Add your email here
+  const email = 'info@daanorchidresidency.com'; // Add your email here
 
   const icons = [
     {

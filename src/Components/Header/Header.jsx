@@ -50,7 +50,7 @@ const Header = () => {
       >
         <Container>
           <Navbar.Brand as={Link} to="/" className="fw-bold fs-3 py-4 px-3">
-            <img src={newlogo} width={150} alt="" srcSet="" />
+            <img src={newlogo} width={120} alt="" srcSet="" />
           </Navbar.Brand>
           <Navbar.Toggle onClick={handleToggle} />
           <Navbar.Collapse>

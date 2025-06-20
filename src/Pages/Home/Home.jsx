@@ -111,7 +111,7 @@ function Home() {
   ];
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    document.title = 'Daan - Home';
+    document.title = 'Daan Hotels - Home';
 
     setTimeout(() => {
       setLoading(false); // Hide loader after 2 seconds

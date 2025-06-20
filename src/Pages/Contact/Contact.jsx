@@ -11,7 +11,7 @@ function Contact() {
   const form = useRef();
    const [loading, setLoading] = useState(true);
       useEffect(() => {
-         document.title = 'Daan - Contact';
+         document.title = 'Daan Hotels - Contact';
     
         setTimeout(() => {
           setLoading(false); // Hide loader after 2 seconds

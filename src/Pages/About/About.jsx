@@ -52,7 +52,7 @@ export default function About() {
 
  const [loading, setLoading] = useState(true);
       useEffect(() => {
-         document.title = 'Daan - About';
+         document.title = 'Daan Hotels - About';
     
         setTimeout(() => {
           setLoading(false); // Hide loader after 2 seconds
@@ -101,7 +101,7 @@ export default function About() {
           </div>
           <div className="col-lg-6 d-flex align-items-center justify-content-center bg-dark text-white p-4 text-container">
             <div>
-              <h5 className="text-warning">Daan Regency</h5>
+              <h5 className="text-warning">Daan Group</h5>
               <h2 className="fw-bold mb-4">OUR STORY</h2>
               <p className="story-text">
               Welcome to Daan Regency, where the charm of a peaceful retreat meets the convenience of city living. 

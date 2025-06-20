@@ -3,7 +3,7 @@
 @import url('https://fonts.cdnfonts.com/css/Vibrant-Display');
 
 .carousel-bg {
-  margin: 40px 30px;
+  margin: 40px 20px;
  
   background-color: transparent;
   border-radius: 30px;
@@ -13,14 +13,13 @@
     background-repeat: no-repeat;
     position: relative;
     /* animation: zoomInOnce 10s ease-in-out infinite; */
-   
   }
   
 
   
   .overlay {
     border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.365); 
+    background-color: rgba(0, 0, 0, 0.208); 
     height: 100%;
     width: 100%;
     display: flex;

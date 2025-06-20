@@ -26,7 +26,7 @@ const services = [
     description: 'All rooms enabled with free wifi',
   },
    {
-    icon: '🏟️',
+    icon: '🏛️',
     title: 'Banquet Halls',
     description: 'Host your events with ease',
   }, {

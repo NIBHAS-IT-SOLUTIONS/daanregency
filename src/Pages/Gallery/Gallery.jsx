@@ -13,12 +13,16 @@ import Daanresidency from '../../utils/Jsonfiles/Daanresidency'
 import galleryimg from '../../Images/galleries.jpg'
 import DaanVazhakkala from '../../utils/Jsonfiles/vazhakala';
 import OrchidKottayam from '../../utils/Jsonfiles/OrchidKottayam';
+import daanregency from '../../utils/Jsonfiles/Daanregency';
+import amalaarcade from '../../utils/Jsonfiles/Amalaarcade';
+import meridian from '../../utils/Jsonfiles/Meridian';
+import daansouth from '../../utils/Jsonfiles/Daansouth';
 
 export default function Gallery() {
   
   const [loading, setLoading] = useState(true);
     useEffect(() => {
-       document.title = 'Daan - Gallery';
+       document.title = 'Daan Hotels - Gallery';
   
       setTimeout(() => {
         setLoading(false); // Hide loader after 2 seconds
@@ -57,31 +61,45 @@ export default function Gallery() {
         </div>
       </section>
       <br />
-      
+      <h2 className='display-5 text-center'>Daan Orchid Kottayam</h2>
+<Fade  direction="down" cascade delay={200} duration={1000}>
+      <GalleryComponent images={OrchidKottayam}/></Fade>
+
+<h2 className='display-5 text-center'>Daan Regency</h2>
+          <Fade  direction="down" cascade delay={200} duration={1000}>
+      <GalleryComponent images={daanregency}/></Fade>
+
+<h2 className='display-5 text-center'>Daan Temple Inn</h2>
+          <Fade  direction="down" cascade delay={200} duration={1000}>
+      <GalleryComponent images={Temple}/></Fade>
+
           <h2 className='display-5 text-center'>Urban 24</h2>
           <Fade  direction="down" cascade delay={200} duration={1000}>
       <GalleryComponent images={Urbnimages}/>
       </Fade >
-      <br />
-          <h2 className='display-5 text-center'>Yaad Inn</h2>
-          <Fade  direction="down" cascade delay={200} duration={1000}>
-      <GalleryComponent images={Yaadimages}/></Fade>
-
-          <h2 className='display-5 text-center'>Temple Inn</h2>
-          <Fade  direction="down" cascade delay={200} duration={1000}>
-      <GalleryComponent images={Temple}/></Fade>
-
+      
+<h2 className='display-5 text-center'>Daan Inn Vazhakkala</h2>
+<Fade  direction="down" cascade delay={200} duration={1000}>
+      <GalleryComponent images={DaanVazhakkala}/></Fade>
+      
+      
 <h2 className='display-5 text-center'>Daan Residency</h2>
 <Fade  direction="down" cascade delay={200} duration={1000}>
       <GalleryComponent images={Daanresidency}/></Fade>
 
-<h2 className='display-5 text-center'>Daan Inn Vazhakkala</h2>
-<Fade  direction="down" cascade delay={200} duration={1000}>
-      <GalleryComponent images={DaanVazhakkala}/></Fade>
+          <h2 className='display-5 text-center'>Amala Arcade</h2>
+          <Fade  direction="down" cascade delay={200} duration={1000}>
+      <GalleryComponent images={amalaarcade}/></Fade>
 
-<h2 className='display-5 text-center'>Orchid Kottayam</h2>
-<Fade  direction="down" cascade delay={200} duration={1000}>
-      <GalleryComponent images={OrchidKottayam}/></Fade>
+           <h2 className='display-5 text-center'>Daan SouthPark</h2>
+          <Fade  direction="down" cascade delay={200} duration={1000}>
+      <GalleryComponent images={daansouth}/></Fade>
+
+ <h2 className='display-5 text-center'>Meridian By Daan</h2>
+          <Fade  direction="down" cascade delay={200} duration={1000}>
+      <GalleryComponent images={meridian}/></Fade>
+
+
 
       </div>
     
