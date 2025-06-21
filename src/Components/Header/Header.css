@@ -19,7 +19,7 @@
                                                 
                                                 
 }
-.phonee{
+.phonee {
   font-family: 'Maria', sans-serif;
                                                 
 }
@@ -128,11 +128,22 @@
   .topile-bar {
     flex-direction: column;
     align-items: center;
-    padding: 15px;
-    font-size: 12px;
+    padding: 15px 10px;
+    font-size: 10px;
     text-align: center;
     gap: 5px;
     
+  }
+   .topile-bar .phonee {
+    display: inline;
+    width: 70%; /* Put side by side */
+    text-align: center;
+  }
+
+  .topile-bar .places {
+    order: 2;
+    text-align: center;
+    margin-top: 10px;
   }
 }
 

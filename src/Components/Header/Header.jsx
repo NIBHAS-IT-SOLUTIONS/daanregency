@@ -38,7 +38,7 @@ const Header = () => {
       <div className="topile-bar">
     <span className='phonee'>📞 +91-9633-833-141</span>
     <span className='places'>We're in Trivandrum , Kottayam , Kochi , Thrissur , Guruvayoor</span>
-    <span className='phonee'>✉️  info@daanorchidresidency.com</span>
+    <span className='phonee'>✉️ info@daanorchidresidency.com</span>
   </div>
       <Navbar
         expand="lg"
